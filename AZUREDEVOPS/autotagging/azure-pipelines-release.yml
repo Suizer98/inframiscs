@@ -1,0 +1,53 @@
+trigger:
+  tags:
+    include:
+      - v*.*.*
+
+pr: none
+
+resources:
+- repo: self
+
+variables:
+  - group: 'Variables and Flags'
+
+stages:
+- stage: PackageRelease
+  displayName: Package for Release (tag build)
+  jobs:
+  - job: ReleaseMetadata
+    displayName: Publish release metadata artifact
+    pool: DefaultPool
+    steps:
+    - checkout: self
+      fetchDepth: 1
+    - task: PowerShell@2
+      displayName: Write release manifest
+      inputs:
+        targetType: inline
+        script: |
+          $d = $env:BUILD_ARTIFACTSTAGINGDIRECTORY
+          if (-not $d) { $d = "$(Build.ArtifactStagingDirectory)" }
+          New-Item -ItemType Directory -Force -Path $d | Out-Null
+          $lines = @(
+            "source_branch=$env:REL_SOURCE_BRANCH",
+            "source_branch_name=$env:REL_SOURCE_BRANCH_NAME",
+            "source_version=$env:REL_SOURCE_VERSION",
+            "build_id=$env:REL_BUILD_ID",
+            "build_number=$env:REL_BUILD_NUMBER"
+          )
+          $p = Join-Path $d 'release.txt'
+          $lines | Set-Content -Path $p -Encoding utf8
+          '---' ; Get-Content $p
+      env:
+        REL_SOURCE_BRANCH: $(Build.SourceBranch)
+        REL_SOURCE_BRANCH_NAME: $(Build.SourceBranchName)
+        REL_SOURCE_VERSION: $(Build.SourceVersion)
+        REL_BUILD_ID: $(Build.BuildId)
+        REL_BUILD_NUMBER: $(Build.BuildNumber)
+    - task: PublishBuildArtifacts@1
+      displayName: Publish build artifact
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'release'
+        publishLocation: 'Container'

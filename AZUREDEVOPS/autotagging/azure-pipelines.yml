@@ -1,0 +1,108 @@
+trigger:
+- master
+- main
+- prod
+
+pr:
+- master
+- main
+
+resources:
+- repo: self
+
+variables:
+  - group: 'Variables and Flags'
+  - name: tag
+    value: '$(Build.BuildId)'
+  - name: projectName
+    value: 'python-test-kits'
+  - name: dockerComposePath
+    value: 'docker-compose'
+
+stages:
+- stage: Build
+  displayName: Build and Test
+  jobs:
+  - job: BuildAndTest
+    displayName: Build Containers and Run Tests
+    pool: DefaultPool
+    steps:
+    - task: DockerCompose@0
+      displayName: Build images
+      inputs:
+        action: 'Run a Docker Compose command'
+        dockerComposeFile: '$(Build.SourcesDirectory)/docker-compose.yml'
+        dockerComposeCommand: '--profile test build test'
+        projectName: '$(projectName)'
+        dockerComposePath: '$(dockerComposePath)'
+
+    - task: DockerCompose@0
+      displayName: Run test suite
+      inputs:
+        action: 'Run a Docker Compose command'
+        dockerComposeFile: '$(Build.SourcesDirectory)/docker-compose.yml'
+        dockerComposeCommand: '--profile test run --rm test'
+        projectName: '$(projectName)'
+        dockerComposePath: '$(dockerComposePath)'
+      env:
+        SEMGREP_APP_TOKEN: $(SEMGREP_APP_TOKEN)
+        BLACK: $(BLACK)
+        RUFF: $(RUFF)
+        BANDIT: $(BANDIT)
+        SAFETY: $(SAFETY)
+        SEMGREP: $(SEMGREP)
+        PYTEST: $(PYTEST)
+
+    - task: DockerCompose@0
+      displayName: Clean up containers
+      inputs:
+        action: 'Run a Docker Compose command'
+        dockerComposeFile: '$(Build.SourcesDirectory)/docker-compose.yml'
+        dockerComposeCommand: 'down -v --remove-orphans'
+        projectName: '$(projectName)'
+        dockerComposePath: '$(dockerComposePath)'
+      condition: always()
+
+# Create tag
+- stage: TagRelease
+  displayName: Tag prod release
+  dependsOn: Build
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/prod'), ne(variables['Build.Reason'], 'PullRequest'))
+  jobs:
+  - job: CreateGitTag
+    displayName: Create and push tag
+    pool: DefaultPool
+    steps:
+    - checkout: self
+      displayName: Checkout for tagging
+      persistCredentials: true
+      fetchDepth: 0
+    - task: Bash@3
+      displayName: Next tag and push
+      inputs:
+        targetType: inline
+        script: |
+          set -euo pipefail
+          git config user.email "build@ado"
+          git config user.name "Azure Pipelines"
+          # Tags may exist only on the server
+          git fetch --tags --force 2>/dev/null || true
+          latest="$(git tag -l 'v*.*.*' 2>/dev/null | sort -V | tail -1 || true)"
+          if [ -z "$latest" ]; then
+            newtag="v1.0.0"
+          else
+            v="${latest#v}"
+            major="$(echo "$v" | cut -d. -f1)"
+            minor="$(echo "$v" | cut -d. -f2)"
+            patch="$(echo "$v" | cut -d. -f3)"
+            patchnum="${patch%%[^0-9]*}"
+            newtag="v${major}.${minor}.$((patchnum + 1))"
+          fi
+          if git rev-parse -q --verify "refs/tags/${newtag}" >/dev/null 2>&1; then
+            echo "Tag $newtag already exists locally; skip."
+            exit 0
+          fi
+          echo "Creating tag: $newtag (previous: ${latest:-none})"
+          git tag -a "$newtag" -m "Release $newtag (build $(Build.BuildId))"
+          # Push the single tag; origin is available when checkout uses persistCredentials
+          git push origin "refs/tags/${newtag}"
