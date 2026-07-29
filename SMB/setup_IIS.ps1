@@ -113,16 +113,25 @@ Set-WebConfigurationProperty `
     -PSPath "IIS:\Sites\$SiteName" `
     -Name enabled -Value $true
 
+# Filenames with + are treated as double-escape sequences and return 404.11 unless allowed
+Set-WebConfigurationProperty `
+    -Filter "/system.webServer/security/requestFiltering" `
+    -PSPath "MACHINE/WEBROOT/APPHOST" -Location $SiteName `
+    -Name allowDoubleEscaping -Value $true
+
 $anon = Get-WebConfigurationProperty -Filter "/system.webServer/security/authentication/anonymousAuthentication" `
     -PSPath "MACHINE/WEBROOT/APPHOST" -Location $SiteName -Name enabled
 $win = Get-WebConfigurationProperty -Filter "/system.webServer/security/authentication/windowsAuthentication" `
     -PSPath "MACHINE/WEBROOT/APPHOST" -Location $SiteName -Name enabled
 $browse = Get-WebConfigurationProperty -Filter "/system.webServer/directoryBrowse" `
     -PSPath "IIS:\Sites\$SiteName" -Name enabled
+$doubleEsc = Get-WebConfigurationProperty -Filter "/system.webServer/security/requestFiltering" `
+    -PSPath "MACHINE/WEBROOT/APPHOST" -Location $SiteName -Name allowDoubleEscaping
 
 Write-Host "Anonymous Auth      : $($anon.Value)"
 Write-Host "Windows Auth        : $($win.Value)"
 Write-Host "Directory browsing  : $($browse.Value)"
+Write-Host "Allow double escape : $($doubleEsc.Value)"
 
 Get-Website | Select-Object Name, State, @{
     n = "Bindings"
@@ -157,5 +166,4 @@ catch {
 }
 
 Write-Step "Done"
-Write-Host "HTTP packages: http://${computerName}:$HttpPort/$PackagesFolderName/"
-Write-Host "Prefer hostname over IP in browsers to avoid 401 with Windows Auth."
+Write-Host "HTTP packages: http://<server-ip>:$HttpPort/$PackagesFolderName/"

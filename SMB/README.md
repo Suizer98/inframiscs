@@ -16,35 +16,34 @@ Replace with your real host when deploying.
 
 | Item                        | Sample value                            |
 | --------------------------- | --------------------------------------- |
-| Server IP                   | `198.16.xx.101`                         |
+| Server IP                   | `100.16.xx.101`                         |
 | Hostname                    | `network-share-1`                       |
 | Local admin (pipeline copy) | `network-share-1\Administrator`         |
 | Share name                  | `Artifacts`                             |
 | Physical path               | `C:\Artifacts`                          |
 | Packages folder             | `C:\Artifacts\Packages`                 |
-| SMB UNC (packages)          | `\\198.16.xx.101\Artifacts\Packages`    |
-| HTTP URL (packages)         | `http://network-share-1:8000/Packages/` |
+| SMB UNC (packages)          | `\\100.16.xx.101\Artifacts\Packages`    |
+| HTTP URL (packages)         | `http://100.16.xx.101:8000/Packages/`   |
 | IIS site / port             | `Artifacts` / `8000`                    |
 | Auth                        | Windows Authentication (Anonymous off)  |
 
 
 ```text
-Test-NetConnection 198.16.xx.101 -Port 445
-Test-NetConnection 198.16.xx.101 -Port 8000
+Test-NetConnection 100.16.xx.101 -Port 445
+Test-NetConnection 100.16.xx.101 -Port 8000
 
-\\198.16.xx.101\Artifacts\Packages
+\\100.16.xx.101\Artifacts\Packages
 \\network-share-1\Artifacts\Packages
-http://network-share-1:8000/Packages/
-http://198.16.xx.101:8000/Packages/   # often 401 — prefer hostname
+http://100.16.xx.101:8000/Packages/
 ```
 
-Prefer hostname URLs in browsers. IP URLs often return `401` because browsers treat IPs as Internet zone and skip Windows credentials.
+Use the IP URL for HTTP. Browsers may treat IPs as Internet zone and return `401` until you enter credentials (see Browser access).
 
 ---
 
 ## 2. Prerequisites
 
-- RDP as local or domain admin to `network-share-1` (`198.16.xx.101`)
+- RDP as local or domain admin to `network-share-1` (`100.16.xx.101`)
 - TCP `445` (SMB) and `8000` (HTTP) reachable
 - Accounts/groups that should download packages
 - Pipeline secrets for the copy account
@@ -98,15 +97,15 @@ Test from another machine or the build agent, not only loopback on the server.
 $password = Read-Host "Password for network-share-1\Administrator" -AsSecureString
 $creds = New-Object System.Management.Automation.PSCredential ("network-share-1\Administrator", $password)
 
-net use \\198.16.xx.101\Artifacts /delete /y 2>$null
+net use \\100.16.xx.101\Artifacts /delete /y 2>$null
 
-New-PSDrive -Name Z -PSProvider FileSystem -Root "\\198.16.xx.101\Artifacts" -Credential $creds
+New-PSDrive -Name Z -PSProvider FileSystem -Root "\\100.16.xx.101\Artifacts" -Credential $creds
 Get-ChildItem Z:\Packages
 "hello" | Set-Content Z:\Packages\test.txt
 Remove-PSDrive Z
-net use \\198.16.xx.101\Artifacts /delete /y
+net use \\100.16.xx.101\Artifacts /delete /y
 
-Test-NetConnection 198.16.xx.101 -Port 445
+Test-NetConnection 100.16.xx.101 -Port 445
 ```
 
 ---
@@ -152,6 +151,12 @@ Set-WebConfigurationProperty `
   -Filter "/system.webServer/directoryBrowse" `
   -PSPath "IIS:\Sites\Artifacts" `
   -Name enabled -Value $true
+
+# Needed so downloads with + in the filename work (otherwise IIS 404.11)
+Set-WebConfigurationProperty `
+  -Filter "/system.webServer/security/requestFiltering" `
+  -PSPath "MACHINE/WEBROOT/APPHOST" -Location "Artifacts" `
+  -Name allowDoubleEscaping -Value $true
 ```
 
 Firewall and smoke test:
@@ -181,21 +186,59 @@ Get-WebAppPoolState -Name "ArtifactsPool"
 
 ## 6. Browser access
 
-Preferred: `http://network-share-1:8000/Packages/` (usually silent Windows SSO).
+Use the IP URL: `http://100.16.xx.101:8000/Packages/`.
 
-IP URL (`http://198.16.xx.101:8000/Packages/`) often returns `401` — zone/Kerberos behaviour, not a broken site.
-
-To force a credential prompt (client-side; IIS cannot force it):
-
-1. InPrivate/Incognito, then enter `DOMAIN\user`
-2. Add `http://network-share-1` to Trusted Sites → Prompt for user name and password
-3. Or Local Intranet → Custom level → Logon → Prompt (affects all Intranet sites)
+Browsers may return `401` on first visit (IP treated as Internet zone) — not a broken site. Enter `DOMAIN\user` when prompted (InPrivate/Incognito if needed).
 
 Users still need NTFS read on `C:\Artifacts`.
 
 ---
 
-## 7. Sample CI/CD — copy to SMB with powershell task on ADO server
+## 7. Troubleshooting — download 404 when filename contains `+`
+
+If the file exists on disk and SMB can open it, but HTTP returns a generic 404, IIS request filtering is often rejecting `+` as a double-escape sequence (`404.11`). Remote browsers only show a plain 404; the substatus is visible from the server:
+
+```powershell
+Invoke-WebRequest "http://localhost:8000/Packages/.../SomeName+AnotherOne-....zip" `
+  -UseDefaultCredentials -UseBasicParsing
+```
+
+Or check the IIS log for `404 11`:
+
+```powershell
+$logDir = "C:\inetpub\logs\LogFiles\W3SVC$((Get-Website -Name Artifacts).id)"
+Get-ChildItem $logDir | Sort-Object LastWriteTime -Descending | Select-Object -First 1 |
+  Get-Content | Select-String " 404 "
+```
+
+Site fix (also applied by `setup_IIS.ps1`):
+
+```powershell
+Set-WebConfigurationProperty `
+  -Filter "/system.webServer/security/requestFiltering" `
+  -PSPath "MACHINE/WEBROOT/APPHOST" -Location "Artifacts" `
+  -Name allowDoubleEscaping -Value $true
+
+Restart-WebAppPool -Name "ArtifactsPool"
+```
+
+Longer term, avoid `+` in artifact names so links stay copy-pasteable without that setting. In the release naming script:
+
+```powershell
+$envName = "$(Release.EnvironmentName)" -replace '[^\w\.-]', '-'
+$newArtifactName = "$(Release.DefinitionName)-$envName-$(Build.BuildNumber)-$(Release.ReleaseName).zip"
+```
+
+Rename existing files in place if needed:
+
+```powershell
+Get-ChildItem "C:\Artifacts\Packages" -Filter "*+*" -Recurse |
+  Rename-Item -NewName { $_.Name -replace '\+', '-' }
+```
+
+---
+
+## 8. Sample CI/CD — copy to SMB with powershell task on ADO server
 
 Map the share, copy the package, then clean up the drive (avoids multiple-credential SMB errors):
 
@@ -203,7 +246,7 @@ Map the share, copy the package, then clean up the drive (avoids multiple-creden
 $password = ConvertTo-SecureString "$(SharePassword)" -AsPlainText -Force
 $creds = New-Object System.Management.Automation.PSCredential ("$(ShareAccount)", $password)
 
-$share = "\\198.16.xx.101\Artifacts"
+$share = "\\100.16.xx.101\Artifacts"
 $src   = "$(ArtifactPath)"
 $dst   = "Z:\Packages\$(ArtifactName)"
 
@@ -221,8 +264,8 @@ finally {
     $global:LASTEXITCODE = 0
 }
 
-Write-Host "SMB : \\198.16.xx.101\Artifacts\Packages\"
-Write-Host "HTTP: http://network-share-1:8000/Packages/"
+Write-Host "SMB : \\100.16.xx.101\Artifacts\Packages\"
+Write-Host "HTTP: http://100.16.xx.101:8000/Packages/"
 ```
 Use pipeline variables for `ShareAccount`, `SharePassword`, `ArtifactPath`, and `ArtifactName`.
 
