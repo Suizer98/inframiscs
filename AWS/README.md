@@ -65,3 +65,19 @@ Test-NetConnection iam.amazonaws.com -Port 443
 ```
 
 If this fails while STS works, policy listing from the box will fail even though identity works.
+
+## Use boto3 without changing the Python env
+
+Do not `pip install` into any shared interpreter. Keep `boto3`, `botocore`, and dependencies in `site-packages` next to this README, then add that folder on `sys.path` before `import boto3`:
+
+```python
+import os
+import sys
+
+scriptDir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(scriptDir, "site-packages"))
+
+import boto3
+```
+
+Typical dependencies should be `boto3`, `botocore`, `jmespath`, `s3transfer`, `dateutil`, `urllib3`, `six`. The env stays untouched; only these scripts see those packages.
