@@ -1,0 +1,108 @@
+{
+  "KeyPairs": [
+    {
+      "KeyPairId": "key-0ac260c7937fce56f",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T09:13:52.371000+00:00",
+      "KeyName": "vm-XXXX-udb-01",
+      "KeyFingerprint": "88:60:ab:1d:fd:15:a7:b9:05:b5:f8:00:4d:da:7a:04:b8:e7:47:b1"
+    },
+    {
+      "KeyPairId": "key-0db6de641ed738c87",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T09:59:42.827000+00:00",
+      "KeyName": "vm-XXXX-rdb-01",
+      "KeyFingerprint": "03:59:86:f9:34:e1:cb:59:a0:2c:40:91:96:d8:60:f6:2d:e3:61:25"
+    },
+    {
+      "KeyPairId": "key-09a82928c7ee0ed7e",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-09-29T09:16:34.426000+00:00",
+      "KeyName": "vm-XXXX-01",
+      "KeyFingerprint": "9d:25:d2:41:7e:a6:b4:04:44:12:7b:90:fe:b2:00:9a:cd:79:33:25"
+    },
+    {
+      "KeyPairId": "key-0357b564d9932297d",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2024-03-05T02:30:29.277000+00:00",
+      "KeyName": "vm-XXXX-proxy-01",
+      "KeyFingerprint": "a5:c0:d4:2c:12:d7:4b:70:fb:44:40:19:4b:6a:6b:14:83:a7:f6:8d"
+    },
+    {
+      "KeyPairId": "key-0af184e3d5ac5cbaa",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T03:30:53.235000+00:00",
+      "KeyName": "vm-XXXX-job-01",
+      "KeyFingerprint": "97:7e:8b:9d:4f:e1:ea:91:b4:63:b9:b9:77:13:06:ba:1c:fd:2f:de"
+    },
+    {
+      "KeyPairId": "key-0cc6831a253bd9748",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T04:01:42.296000+00:00",
+      "KeyName": "vm-XXXX-gp-01",
+      "KeyFingerprint": "4c:77:1e:40:57:af:36:3e:66:ae:bc:d6:4f:1f:ff:e4:a7:6a:ed:d4"
+    },
+    {
+      "KeyPairId": "key-05cf0717cf993b80e",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-09-29T06:13:37.956000+00:00",
+      "KeyName": "vm-XXXX-01",
+      "KeyFingerprint": "a3:a6:b3:30:ba:e6:a1:64:d0:da:41:77:ae:f5:36:ea:70:85:4c:9d"
+    },
+    {
+      "KeyPairId": "key-0ad9428bd2a80d4f5",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T03:44:56.158000+00:00",
+      "KeyName": "vm-XXXX-un-01",
+      "KeyFingerprint": "b2:c5:df:74:34:74:36:c7:c2:7d:7e:60:01:f9:22:d7:47:fb:56:2c"
+    },
+    {
+      "KeyPairId": "key-0ce3984bb6e3469e2",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-09-29T09:23:46.255000+00:00",
+      "KeyName": "vm-XXXX-01",
+      "KeyFingerprint": "f7:a9:4e:9f:cf:a5:fc:80:d1:a0:de:7c:b2:9b:6e:9c:58:3e:6e:de"
+    },
+    {
+      "KeyPairId": "key-0425e46eb235f3ffd",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T04:08:10.525000+00:00",
+      "KeyName": "vm-XXXX-ptl-01",
+      "KeyFingerprint": "10:2f:fb:3b:e6:42:ea:b2:4c:21:66:15:04:47:eb:49:e7:c2:be:26"
+    },
+    {
+      "KeyPairId": "key-0e1921f6b8e1a99e1",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T05:03:28.741000+00:00",
+      "KeyName": "vm-XXXX-file-01",
+      "KeyFingerprint": "e7:d8:4e:46:5f:05:3d:5c:7e:bc:01:13:91:74:19:5d:9c:2d:47:2e"
+    },
+    {
+      "KeyPairId": "key-0cef6a1c06039fc5f",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T03:22:49.575000+00:00",
+      "KeyName": "vm-XXXX-map-01",
+      "KeyFingerprint": "78:3d:2e:1c:40:13:a2:ed:2a:d7:b4:1b:a3:fc:50:63:b9:83:31:ed"
+    },
+    {
+      "KeyPairId": "key-0533f913b875cc17e",
+      "KeyType": "rsa",
+      "Tags": [],
+      "CreateTime": "2023-10-02T09:41:02.232000+00:00",
+      "KeyName": "vm-XXXX-edb-01",
+      "KeyFingerprint": "7f:fb:1f:05:10:7e:02:ef:85:80:a2:3b:df:94:eb:69:9c:f2:b0:20"
+    }
+  ]
+}

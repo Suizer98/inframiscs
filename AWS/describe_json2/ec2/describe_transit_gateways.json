@@ -1,0 +1,48 @@
+{
+  "TransitGateways": [
+    {
+      "TransitGatewayId": "tgw-80a01b7d36f6fea48",
+      "TransitGatewayArn": "arn:aws:ec2:ap-southeast-1:555555555555:transit-gateway/tgw-80a01b7d36f6fea48",
+      "State": "available",
+      "OwnerId": "555555555555",
+      "Description": "GCC+ GEN Transit Gateway 1 for GEN Connectivity",
+      "CreationTime": "2025-08-19T10:27:41+00:00",
+      "Options": {
+        "AmazonSideAsn": 65120,
+        "AutoAcceptSharedAttachments": "disable",
+        "DefaultRouteTableAssociation": "disable",
+        "DefaultRouteTablePropagation": "disable",
+        "VpnEcmpSupport": "enable",
+        "DnsSupport": "enable",
+        "SecurityGroupReferencingSupport": "disable",
+        "MulticastSupport": "disable",
+        "EncryptionSupport": {
+          "EncryptionState": "disabled"
+        }
+      },
+      "Tags": []
+    },
+    {
+      "TransitGatewayId": "tgw-0226039593ccc7a2b",
+      "TransitGatewayArn": "arn:aws:ec2:ap-southeast-1:555555555555:transit-gateway/tgw-0226039593ccc7a2b",
+      "State": "available",
+      "OwnerId": "555555555555",
+      "Description": "GCC+ Common Services Transit Gateway",
+      "CreationTime": "2025-06-03T08:41:45+00:00",
+      "Options": {
+        "AmazonSideAsn": 65530,
+        "AutoAcceptSharedAttachments": "disable",
+        "DefaultRouteTableAssociation": "disable",
+        "DefaultRouteTablePropagation": "disable",
+        "VpnEcmpSupport": "enable",
+        "DnsSupport": "enable",
+        "SecurityGroupReferencingSupport": "disable",
+        "MulticastSupport": "disable",
+        "EncryptionSupport": {
+          "EncryptionState": "disabled"
+        }
+      },
+      "Tags": []
+    }
+  ]
+}

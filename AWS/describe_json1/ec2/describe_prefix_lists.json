@@ -1,0 +1,56 @@
+{
+  "PrefixLists": [
+    {
+      "Cidrs": [
+        "10.20.144.0/21",
+        "10.20.202.0/23",
+        "10.20.200.0/23",
+        "10.20.168.0/22",
+        "10.20.180.0/22",
+        "10.20.184.0/22",
+        "10.20.152.0/21",
+        "10.20.160.0/21",
+        "10.20.128.0/21",
+        "10.20.188.0/22",
+        "10.20.172.0/22",
+        "10.20.192.0/22"
+      ],
+      "PrefixListId": "pl-87412a61",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.s3"
+    },
+    {
+      "Cidrs": [
+        "10.20.218.0/25",
+        "10.20.209.0/24",
+        "10.20.227.128/26"
+      ],
+      "PrefixListId": "pl-73972e8c",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.dynamodb"
+    },
+    {
+      "Cidrs": [
+        "2406:dabb:8000::/40"
+      ],
+      "PrefixListId": "pl-c19ea38c",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ipv6.dynamodb"
+    },
+    {
+      "Cidrs": [
+        "10.20.196.0/22",
+        "10.20.213.0/24",
+        "10.20.176.0/22",
+        "10.20.136.0/21"
+      ],
+      "PrefixListId": "pl-60772a69",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.s3express"
+    },
+    {
+      "Cidrs": [
+        "2406:da60:8000::/40",
+        "2406:da61:8000::/40"
+      ],
+      "PrefixListId": "pl-8efe6113",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ipv6.s3"
+    }
+  ]
+}

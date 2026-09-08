@@ -1,0 +1,254 @@
+{
+  "VpcPeeringConnections": [
+    {
+      "AccepterVpcInfo": {
+        "CidrBlock": "10.20.224.128/26",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.224.128/26"
+          },
+          {
+            "CidrBlock": "10.20.228.0/26"
+          },
+          {
+            "CidrBlock": "10.20.214.128/25"
+          },
+          {
+            "CidrBlock": "10.20.225.128/26"
+          },
+          {
+            "CidrBlock": "10.20.224.64/26"
+          },
+          {
+            "CidrBlock": "10.20.225.64/26"
+          },
+          {
+            "CidrBlock": "10.20.229.64/27"
+          }
+        ],
+        "OwnerId": "777777777777",
+        "VpcId": "vpc-fd4f55b8a35a6bd53",
+        "Region": "ap-southeast-1"
+      },
+      "RequesterVpcInfo": {
+        "CidrBlock": "10.20.0.0/16",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          }
+        ],
+        "OwnerId": "111111111111",
+        "PeeringOptions": {
+          "AllowDnsResolutionFromRemoteVpc": false,
+          "AllowEgressFromLocalClassicLinkToRemoteVpc": false,
+          "AllowEgressFromLocalVpcToRemoteClassicLink": false
+        },
+        "VpcId": "vpc-f4efee4924c32459f",
+        "Region": "ap-southeast-1"
+      },
+      "Status": {
+        "Code": "active",
+        "Message": "Active"
+      },
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "XXXX-UAT to XXXX-PRD"
+        }
+      ],
+      "VpcPeeringConnectionId": "pcx-736ea9b051ac5987d"
+    },
+    {
+      "AccepterVpcInfo": {
+        "CidrBlock": "10.20.0.0/16",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          }
+        ],
+        "OwnerId": "111111111111",
+        "PeeringOptions": {
+          "AllowDnsResolutionFromRemoteVpc": false,
+          "AllowEgressFromLocalClassicLinkToRemoteVpc": false,
+          "AllowEgressFromLocalVpcToRemoteClassicLink": false
+        },
+        "VpcId": "vpc-f4efee4924c32459f",
+        "Region": "ap-southeast-1"
+      },
+      "RequesterVpcInfo": {
+        "CidrBlock": "10.20.224.0/26",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.224.0/26"
+          },
+          {
+            "CidrBlock": "10.20.226.64/26"
+          },
+          {
+            "CidrBlock": "10.20.216.0/25"
+          },
+          {
+            "CidrBlock": "10.20.227.192/26"
+          }
+        ],
+        "OwnerId": "888888888888",
+        "VpcId": "vpc-ec4d5a0ff86155b88",
+        "Region": "ap-southeast-1"
+      },
+      "Status": {
+        "Code": "active",
+        "Message": "Active"
+      },
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "Common UAT IA to XXXX IA UAT vpc"
+        }
+      ],
+      "VpcPeeringConnectionId": "pcx-256fc5846cc250ab6"
+    },
+    {
+      "AccepterVpcInfo": {
+        "CidrBlock": "10.20.0.0/16",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          }
+        ],
+        "OwnerId": "111111111111",
+        "PeeringOptions": {
+          "AllowDnsResolutionFromRemoteVpc": false,
+          "AllowEgressFromLocalClassicLinkToRemoteVpc": false,
+          "AllowEgressFromLocalVpcToRemoteClassicLink": false
+        },
+        "VpcId": "vpc-f4efee4924c32459f",
+        "Region": "ap-southeast-1"
+      },
+      "RequesterVpcInfo": {
+        "CidrBlock": "10.20.224.192/26",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.224.192/26"
+          },
+          {
+            "CidrBlock": "10.20.225.192/26"
+          },
+          {
+            "CidrBlock": "10.20.221.0/25"
+          },
+          {
+            "CidrBlock": "10.20.228.64/26"
+          },
+          {
+            "CidrBlock": "10.20.221.128/25"
+          }
+        ],
+        "OwnerId": "333333333333",
+        "VpcId": "vpc-b547d92234d892038",
+        "Region": "ap-southeast-1"
+      },
+      "Status": {
+        "Code": "active",
+        "Message": "Active"
+      },
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "CMIF to XXXX UAT vpc"
+        }
+      ],
+      "VpcPeeringConnectionId": "pcx-7e3d5b6187c2948f9"
+    },
+    {
+      "AccepterVpcInfo": {
+        "CidrBlock": "10.20.0.0/16",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          },
+          {
+            "CidrBlock": "10.20.0.0/16"
+          }
+        ],
+        "OwnerId": "111111111111",
+        "PeeringOptions": {
+          "AllowDnsResolutionFromRemoteVpc": false,
+          "AllowEgressFromLocalClassicLinkToRemoteVpc": false,
+          "AllowEgressFromLocalVpcToRemoteClassicLink": false
+        },
+        "VpcId": "vpc-f4efee4924c32459f",
+        "Region": "ap-southeast-1"
+      },
+      "RequesterVpcInfo": {
+        "CidrBlock": "10.20.225.0/26",
+        "CidrBlockSet": [
+          {
+            "CidrBlock": "10.20.225.0/26"
+          },
+          {
+            "CidrBlock": "10.20.226.0/26"
+          },
+          {
+            "CidrBlock": "10.20.216.128/25"
+          },
+          {
+            "CidrBlock": "10.20.228.128/26"
+          },
+          {
+            "CidrBlock": "10.20.214.0/25"
+          },
+          {
+            "CidrBlock": "10.20.229.96/27"
+          }
+        ],
+        "OwnerId": "333333333333",
+        "VpcId": "vpc-714c21daf23e2eb80",
+        "Region": "ap-southeast-1"
+      },
+      "Status": {
+        "Code": "active",
+        "Message": "Active"
+      },
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "Common PRD IA to XXXX IA UAT vpc"
+        }
+      ],
+      "VpcPeeringConnectionId": "pcx-d2d93f21c89e66f1c"
+    }
+  ]
+}

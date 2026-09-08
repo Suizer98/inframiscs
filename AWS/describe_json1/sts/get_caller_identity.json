@@ -1,0 +1,5 @@
+{
+  "UserId": "AROABB3C0CA790C9E269:i-b367b9e20c6693abd",
+  "Account": "111111111111",
+  "Arn": "arn:aws:sts::111111111111:assumed-role/u-XXXX-iamr-ec2-profile/i-b367b9e20c6693abd"
+}

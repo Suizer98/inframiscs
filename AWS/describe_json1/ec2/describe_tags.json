@@ -1,0 +1,4888 @@
+{
+  "Tags": [
+    {
+      "Key": "Author",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatjob-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-ee217c8edfc78d82b",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-97f3646271e219eb0",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-97f3646271e219eb0",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatweb-01-0"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-97f3646271e219eb0",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-97f3646271e219eb0",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-97f3646271e219eb0",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-97f3646271e219eb0",
+      "ResourceType": "volume",
+      "Value": "web"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-97f3646271e219eb0",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatundb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-55670e991bf0ddbad",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-b22618eecf2e9b8de",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-b22618eecf2e9b8de",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatweb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-b22618eecf2e9b8de",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-b22618eecf2e9b8de",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-b22618eecf2e9b8de",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-b22618eecf2e9b8de",
+      "ResourceType": "volume",
+      "Value": "web"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-b22618eecf2e9b8de",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatgp-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-541f012892d9f6587",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatentdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-98fb3d80ed184d823",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatjob-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-2dadfc3efdf4de321",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatentdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-cb299afbd06e2eaca",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatfile-01-0"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-55860e01e8257c3f2",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatrdsdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-cd1e89dda71b48667",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-bd8b2fab070e82175",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-bd8b2fab070e82175",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatweb-proxy-01-0"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-bd8b2fab070e82175",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-bd8b2fab070e82175",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-bd8b2fab070e82175",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-bd8b2fab070e82175",
+      "ResourceType": "volume",
+      "Value": "webproxy"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-bd8b2fab070e82175",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatundb-01-1"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-5ae15507523b2b46f",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatgp-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-612fc3c66c9be6089",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatun-01-0"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-25ab9e145b9f7c71b",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatmap-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-425b3b26553bbcf8b",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatrdsdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-33726fe81b61ff50c",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatundb-01-0"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-7c6309d2532e6792e",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatfile-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-6d5312f8cf5a0b1f7",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatundb-01-2"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-b2d11e7b682075197",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatportal-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-60ab2ead545c03d68",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatentdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-4617bf0da264d1e02",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatportal-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-827cea30b064530e0",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatun-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-af6aed2cc0b460f21",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatmap-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-9830698ee32f55ac8",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-48d5ce17bb7efaf64",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-48d5ce17bb7efaf64",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatweb-proxy-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-48d5ce17bb7efaf64",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-48d5ce17bb7efaf64",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-48d5ce17bb7efaf64",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-48d5ce17bb7efaf64",
+      "ResourceType": "volume",
+      "Value": "webproxy"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-48d5ce17bb7efaf64",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "vol-vm-xxxx-XXXX-uatentdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "vol-ba6c8635e5545b80f",
+      "ResourceType": "volume",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "sub-XXXX-webproxy-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "XXXX Intranet webproxy subnet"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "subnet-1b66049e48f0a3eb1",
+      "ResourceType": "subnet",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT-gateway-ap-southeast-1b"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "subnet-fdde2199170ba33db",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "sub-XXXX-app-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "XXXX Intranet App Subnet"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "subnet-4cf045070400ce875",
+      "ResourceType": "subnet",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT-backup-ap-southeast-11b"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "subnet-9949279275468263f",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "sub-XXXX-db-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "XXXX Intranet DB Subnet"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "subnet-8729cebe40cd0ce97",
+      "ResourceType": "subnet",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT-gateway-ap-southeast-1a"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "subnet-08971ec4bf3b4c635",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "sub-XXXX-web-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "XXXX Intranet Web Subnet"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "subnet-f129cd04587b113d5",
+      "ResourceType": "subnet",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT-management-ap-southeast-11b"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "subnet-91887eb1438f56a95",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT-backup-ap-southeast-11a"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "subnet-6d881c21d6ae8bf24",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT-management-ap-southeast-11a"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "subnet-67ccf2f6d8e2796ff",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT-gateway-ap-southeast-1c"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "subnet-144e3aa3f6c06fcf7",
+      "ResourceType": "subnet",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "XXXX-UAT-private"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "acl-916e1ccb4e85ca534",
+      "ResourceType": "network-acl",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Alias",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "NA"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "nacl-XXXX-uat-app-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "Allow access to XXXX Intranets App"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "acl-a1b83607670ba4c8f",
+      "ResourceType": "network-acl",
+      "Value": "ia"
+    },
+    {
+      "Key": "Alias",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "NA"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "nacl-XXXX-uat-proxy-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "Allow access to XXXX webproxy"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "acl-baf6e0dc0a983e1be",
+      "ResourceType": "network-acl",
+      "Value": "ia"
+    },
+    {
+      "Key": "Alias",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "NA"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "nacl-XXXX-uat-db-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "Allow access to XXXX Intranets DB"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "acl-7d1233b931865feb3",
+      "ResourceType": "network-acl",
+      "Value": "ia"
+    },
+    {
+      "Key": "Alias",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "NA"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "nacl-XXXX-uat-web-01"
+    },
+    {
+      "Key": "Purpose",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "Allow access to XXXX Intranets Web"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "acl-806c6b42929ebf357",
+      "ResourceType": "network-acl",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-job-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "Intranet App Job VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-b367b9e20c6693abd",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-web-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "Intranet Web VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "web"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-e3108b47b58f03d5e",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-rdb-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "Intranet DB Relational Data Store Server VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-1e3aaa624e8624a11",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-udb-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "Intranet DB UN Server VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-118eed52fcfca2268",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-uapp-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "Intranet App Job VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-918bf37a964d19bb7",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-ptl-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "Intranet App Portal Server VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-259663a51d7130462",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-edb-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "Intranet DB Enterprise Server VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-73dc407ad5e3da486",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-file-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "Intranet App File Server VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-5d3cc0cd1958d2281",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-proxy-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "Intranet Web proxy 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "webproxy"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-5569c2f659cf0f69a",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-gp-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "Intranet App GP Server VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-524554418a6635705",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "vm-XXXX-map-01"
+    },
+    {
+      "Key": "OS",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "Windows"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "purpose",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "Intranet App Map VM 1 XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "i-318d451a237756298",
+      "ResourceType": "instance",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "cmp_cidr",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "/25"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "ResourceType": "vpc",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "nip-072c7f527b6df56c3",
+      "ResourceType": "network-insights-path",
+      "Value": "testing"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "nip-0b0166f0c035448a7",
+      "ResourceType": "network-insights-path",
+      "Value": "test"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "tgw-attach-cf6758d210617b9c3",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "tgw-attach-cf6758d210617b9c3",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "tgw-attach-cf6758d210617b9c3",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "tgw-attach-cf6758d210617b9c3",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "tgw-attach-cf6758d210617b9c3",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "tgw-attach-cf6758d210617b9c3",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "tgw-attach-cf6758d210617b9c3",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "tgw-attach-38361a66e91a46c99",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "tgw-attach-38361a66e91a46c99",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "tgw-attach-38361a66e91a46c99",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "tgw-attach-38361a66e91a46c99",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "tgw-attach-38361a66e91a46c99",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "tgw-attach-38361a66e91a46c99",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "tgw-attach-38361a66e91a46c99",
+      "ResourceType": "transit-gateway-attachment",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "vpce-e1f3ebecaf276fb2a",
+      "ResourceType": "vpc-endpoint",
+      "Value": "vpce-s3-test"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "vpc-flowlog-vpc-f4efee4924c32459f"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "fl-04d142766d3af769a",
+      "ResourceType": "vpc-flow-log",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-4c9b120c417998692",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-4c9b120c417998692",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-4c9b120c417998692",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-ptl-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-4c9b120c417998692",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-4c9b120c417998692",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-4c9b120c417998692",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-4c9b120c417998692",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-50b79733dcf4240a1",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-50b79733dcf4240a1",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-50b79733dcf4240a1",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-edb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-50b79733dcf4240a1",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-50b79733dcf4240a1",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-50b79733dcf4240a1",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-50b79733dcf4240a1",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-7079bcbb558022f61",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-7079bcbb558022f61",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-7079bcbb558022f61",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-rdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-7079bcbb558022f61",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-7079bcbb558022f61",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-7079bcbb558022f61",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-7079bcbb558022f61",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-c6fa82cb28e1fb1f5",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-c6fa82cb28e1fb1f5",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-c6fa82cb28e1fb1f5",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-udb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-c6fa82cb28e1fb1f5",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-c6fa82cb28e1fb1f5",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-c6fa82cb28e1fb1f5",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-c6fa82cb28e1fb1f5",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-703bf2694bdf82ed0",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-703bf2694bdf82ed0",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-703bf2694bdf82ed0",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-gp-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-703bf2694bdf82ed0",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-703bf2694bdf82ed0",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-703bf2694bdf82ed0",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-703bf2694bdf82ed0",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-0b51d54f35b16bee7",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-0b51d54f35b16bee7",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-0b51d54f35b16bee7",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-management-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-0b51d54f35b16bee7",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-0b51d54f35b16bee7",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-0b51d54f35b16bee7",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-0b51d54f35b16bee7",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-40ce930f842de3d88",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-40ce930f842de3d88",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-40ce930f842de3d88",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-webproxy-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-40ce930f842de3d88",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-40ce930f842de3d88",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-40ce930f842de3d88",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-40ce930f842de3d88",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-f92fbfe42f69e5786",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-f92fbfe42f69e5786",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-f92fbfe42f69e5786",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-appalb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-f92fbfe42f69e5786",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-f92fbfe42f69e5786",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-f92fbfe42f69e5786",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-f92fbfe42f69e5786",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "sg-ea550243621d8f23d",
+      "ResourceType": "security-group",
+      "Value": "team"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-8464f6c0a477d829a",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-8464f6c0a477d829a",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-8464f6c0a477d829a",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-adjoin-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-8464f6c0a477d829a",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-8464f6c0a477d829a",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-8464f6c0a477d829a",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-8464f6c0a477d829a",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-08b9a430cb789f96c",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-08b9a430cb789f96c",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-08b9a430cb789f96c",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-uapp-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-08b9a430cb789f96c",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-08b9a430cb789f96c",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-08b9a430cb789f96c",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-08b9a430cb789f96c",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-cb5968f5ba1ad50e8",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-cb5968f5ba1ad50e8",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-cb5968f5ba1ad50e8",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-job-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-cb5968f5ba1ad50e8",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-cb5968f5ba1ad50e8",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-cb5968f5ba1ad50e8",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-cb5968f5ba1ad50e8",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-a14e1807ea7d32a83",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-a14e1807ea7d32a83",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-a14e1807ea7d32a83",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-web-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-a14e1807ea7d32a83",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-a14e1807ea7d32a83",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-a14e1807ea7d32a83",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-a14e1807ea7d32a83",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-f0fc5c0853acf649d",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-soe"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-f1e22e496da168c30",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-f1e22e496da168c30",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-f1e22e496da168c30",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-map-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-f1e22e496da168c30",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-f1e22e496da168c30",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-f1e22e496da168c30",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-f1e22e496da168c30",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-7650972b67a042a18",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-7650972b67a042a18",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-7650972b67a042a18",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-file-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-7650972b67a042a18",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-7650972b67a042a18",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-7650972b67a042a18",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-7650972b67a042a18",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "sg-1269df882c3567c92",
+      "ResourceType": "security-group",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "sg-1269df882c3567c92",
+      "ResourceType": "security-group",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "sg-1269df882c3567c92",
+      "ResourceType": "security-group",
+      "Value": "sgrp-XXXX-baas-backup-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "sg-1269df882c3567c92",
+      "ResourceType": "security-group",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "sg-1269df882c3567c92",
+      "ResourceType": "security-group",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "sg-1269df882c3567c92",
+      "ResourceType": "security-group",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "sg-1269df882c3567c92",
+      "ResourceType": "security-group",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-7c53ed90e8eff3f55",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-7c53ed90e8eff3f55",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-web-proxy-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-7c53ed90e8eff3f55",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-7c53ed90e8eff3f55",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-7c53ed90e8eff3f55",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-7c53ed90e8eff3f55",
+      "ResourceType": "network-interface",
+      "Value": "webproxy"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-7c53ed90e8eff3f55",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-map-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-95b6e6fd4f3fad5b5",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-job-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-0e572416608c423a5",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-edb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-02012b0db877b457a",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-edb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-84e2e61a08143f841",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-job-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-3f1ae81df90a79982",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-6a752a178f31b7cec",
+      "ResourceType": "network-interface",
+      "Value": "eni-workload"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-ptl-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-8c1bce568feca6004",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-rdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-da43a104d19144ba8",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-file-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-bfad35208b1887d34",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-udb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-afb3314004410a62a",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-file-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-bb27882a74f3f7048",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-ptl-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-ae878a0df985496c9",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-94d0056a8969b824b",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-94d0056a8969b824b",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-web-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-94d0056a8969b824b",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-94d0056a8969b824b",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-94d0056a8969b824b",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-94d0056a8969b824b",
+      "ResourceType": "network-interface",
+      "Value": "web"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-94d0056a8969b824b",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-67a511770f90fc7d9",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-67a511770f90fc7d9",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-web-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-67a511770f90fc7d9",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-67a511770f90fc7d9",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-67a511770f90fc7d9",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-67a511770f90fc7d9",
+      "ResourceType": "network-interface",
+      "Value": "web"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-67a511770f90fc7d9",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-rdb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-3e93edb265f562253",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-gp-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-02add8ace6c2d089c",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-udb-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "db"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-66321fe6a5dfb0a6c",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-un-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-e63f79a2f422d5866",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-backup-gp-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-f6c5c79f1345f196d",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-unapp-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-0d8b7ee4672087128",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-map-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "app"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-3d30bb86212599d46",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "eni-4acfe14e529462679",
+      "ResourceType": "network-interface",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "eni-4acfe14e529462679",
+      "ResourceType": "network-interface",
+      "Value": "eni-XXXX-mgmt-web-proxy-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "eni-4acfe14e529462679",
+      "ResourceType": "network-interface",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "eni-4acfe14e529462679",
+      "ResourceType": "network-interface",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "eni-4acfe14e529462679",
+      "ResourceType": "network-interface",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "tier",
+      "ResourceId": "eni-4acfe14e529462679",
+      "ResourceType": "network-interface",
+      "Value": "webproxy"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "eni-4acfe14e529462679",
+      "ResourceType": "network-interface",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "rtb-2819481f5d754b9de",
+      "ResourceType": "route-table",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "rtb-2819481f5d754b9de",
+      "ResourceType": "route-table",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "rtb-2819481f5d754b9de",
+      "ResourceType": "route-table",
+      "Value": "rtb-XXXX-web-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "rtb-2819481f5d754b9de",
+      "ResourceType": "route-table",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "rtb-2819481f5d754b9de",
+      "ResourceType": "route-table",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "rtb-2819481f5d754b9de",
+      "ResourceType": "route-table",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "rtb-2819481f5d754b9de",
+      "ResourceType": "route-table",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "XXXX-UAT-gateway"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "rtb-523ae690ea6d8f1d5",
+      "ResourceType": "route-table",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "rtb-b2b8df2363bfc2e9a",
+      "ResourceType": "route-table",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "rtb-b2b8df2363bfc2e9a",
+      "ResourceType": "route-table",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "rtb-b2b8df2363bfc2e9a",
+      "ResourceType": "route-table",
+      "Value": "rtb-XXXX-app-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "rtb-b2b8df2363bfc2e9a",
+      "ResourceType": "route-table",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "rtb-b2b8df2363bfc2e9a",
+      "ResourceType": "route-table",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "rtb-b2b8df2363bfc2e9a",
+      "ResourceType": "route-table",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "rtb-b2b8df2363bfc2e9a",
+      "ResourceType": "route-table",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "XXXX-UAT-management"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "rtb-ebef7017f8139ca5e",
+      "ResourceType": "route-table",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "XXXX-UAT-backup"
+    },
+    {
+      "Key": "cmp_compartment_type",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "cmp_name",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "XXXX-UAT"
+    },
+    {
+      "Key": "ec2:ResourceTag/org:security:zone",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "intranet"
+    },
+    {
+      "Key": "org:origin",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "cloud"
+    },
+    {
+      "Key": "org:team",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "team"
+    },
+    {
+      "Key": "request_uuid",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "ce37e6bc53595c9c1d6"
+    },
+    {
+      "Key": "type",
+      "ResourceId": "rtb-a3d6d779dd015aaad",
+      "ResourceType": "route-table",
+      "Value": "Intranet"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "rtb-c41b7fc7c878350b6",
+      "ResourceType": "route-table",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "rtb-c41b7fc7c878350b6",
+      "ResourceType": "route-table",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "rtb-c41b7fc7c878350b6",
+      "ResourceType": "route-table",
+      "Value": "rtb-XXXX-webproxy-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "rtb-c41b7fc7c878350b6",
+      "ResourceType": "route-table",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "rtb-c41b7fc7c878350b6",
+      "ResourceType": "route-table",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "rtb-c41b7fc7c878350b6",
+      "ResourceType": "route-table",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "rtb-c41b7fc7c878350b6",
+      "ResourceType": "route-table",
+      "Value": "ia"
+    },
+    {
+      "Key": "Author",
+      "ResourceId": "rtb-78f94af9392640d0b",
+      "ResourceType": "route-table",
+      "Value": "Vendor"
+    },
+    {
+      "Key": "Created-by",
+      "ResourceId": "rtb-78f94af9392640d0b",
+      "ResourceType": "route-table",
+      "Value": "Terraform"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "rtb-78f94af9392640d0b",
+      "ResourceType": "route-table",
+      "Value": "rtb-XXXX-db-01"
+    },
+    {
+      "Key": "agency-code",
+      "ResourceId": "rtb-78f94af9392640d0b",
+      "ResourceType": "route-table",
+      "Value": "xxxx"
+    },
+    {
+      "Key": "environment",
+      "ResourceId": "rtb-78f94af9392640d0b",
+      "ResourceType": "route-table",
+      "Value": "uat"
+    },
+    {
+      "Key": "project-code",
+      "ResourceId": "rtb-78f94af9392640d0b",
+      "ResourceType": "route-table",
+      "Value": "XXXX"
+    },
+    {
+      "Key": "zone",
+      "ResourceId": "rtb-78f94af9392640d0b",
+      "ResourceType": "route-table",
+      "Value": "ia"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "pcx-736ea9b051ac5987d",
+      "ResourceType": "vpc-peering-connection",
+      "Value": "XXXX-UAT to XXXX-PRD"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "pcx-7e3d5b6187c2948f9",
+      "ResourceType": "vpc-peering-connection",
+      "Value": "CMIF to XXXX UAT vpc"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "pcx-256fc5846cc250ab6",
+      "ResourceType": "vpc-peering-connection",
+      "Value": "Common UAT IA to XXXX IA UAT vpc"
+    },
+    {
+      "Key": "Name",
+      "ResourceId": "pcx-d2d93f21c89e66f1c",
+      "ResourceType": "vpc-peering-connection",
+      "Value": "Common PRD IA to XXXX IA UAT vpc"
+    }
+  ]
+}

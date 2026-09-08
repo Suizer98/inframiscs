@@ -1,0 +1,250 @@
+{
+  "logGroups": [
+    {
+      "logGroupName": "/aws/kinesisfirehose/clm-central-logging-firehose",
+      "creationTime": 1690529080454,
+      "retentionInDays": 365,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/kinesisfirehose/clm-central-logging-firehose:*",
+      "storedBytes": 0,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/kinesisfirehose/clm-central-logging-firehose",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-central-logging-firehose-lambda",
+      "creationTime": 1690882929079,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-central-logging-firehose-lambda:*",
+      "storedBytes": 21749386195,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-central-logging-firehose-lambda",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-modify-sechub-severity-label-lambda",
+      "creationTime": 1690963559123,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-modify-sechub-severity-label-lambda:*",
+      "storedBytes": 14020,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-modify-sechub-severity-label-lambda",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-iam-event-sns-to-EventBridge",
+      "creationTime": 1690859590102,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-iam-event-sns-to-EventBridge:*",
+      "storedBytes": 648548,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-iam-event-sns-to-EventBridge",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT1_3-subscription-to-central-team-logs",
+      "creationTime": 1690529155577,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_3-subscription-to-central-team-logs:*",
+      "storedBytes": 861245,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_3-subscription-to-central-team-logs",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT1_4-cloudwatch-alarms-compliance",
+      "creationTime": 1690529151454,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_4-cloudwatch-alarms-compliance:*",
+      "storedBytes": 865187,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_4-cloudwatch-alarms-compliance",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT1_5-SSM-patch-baselines-configured-compliance",
+      "creationTime": 1690529188966,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_5-SSM-patch-baselines-configured-compliance:*",
+      "storedBytes": 733074,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_5-SSM-patch-baselines-configured-compliance",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT1_6-minimal-tags",
+      "creationTime": 1690529151887,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_6-minimal-tags:*",
+      "storedBytes": 4593277,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_6-minimal-tags",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT1_7-igw-chgtrigger-for-vpc-taggen-or-gencidr",
+      "creationTime": 1690882869476,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_7-igw-chgtrigger-for-vpc-taggen-or-gencidr:*",
+      "storedBytes": 905966,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_7-igw-chgtrigger-for-vpc-taggen-or-gencidr",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT1_8-vpc-taggen-with-routableCIDR",
+      "creationTime": 1690529151248,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_8-vpc-taggen-with-routableCIDR:*",
+      "storedBytes": 2547043,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT1_8-vpc-taggen-with-routableCIDR",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext",
+      "creationTime": 1690882803553,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext:*",
+      "storedBytes": 14036,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext-org",
+      "creationTime": 1713255126975,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext-org:*",
+      "storedBytes": 523262,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext-org",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext-org-refresh",
+      "creationTime": 1714462532202,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext-org-refresh:*",
+      "storedBytes": 1010,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_1-vpc-peering-with-ext-org-refresh",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_2-check-transit-gateway-peering",
+      "creationTime": 1758178231243,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_2-check-transit-gateway-peering:*",
+      "storedBytes": 10966,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_2-check-transit-gateway-peering",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_3-assume-role-policy-with-ext",
+      "creationTime": 1690859594835,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_3-assume-role-policy-with-ext:*",
+      "storedBytes": 279934,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_3-assume-role-policy-with-ext",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_4-asterisk-iam-actions",
+      "creationTime": 1690887937617,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_4-asterisk-iam-actions:*",
+      "storedBytes": 121285,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_4-asterisk-iam-actions",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-put-ebs-size",
+      "creationTime": 1695288385260,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-put-ebs-size:*",
+      "storedBytes": 140192,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-put-ebs-size",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-put-ec2-count",
+      "creationTime": 1695288372204,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-put-ec2-count:*",
+      "storedBytes": 413111,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-put-ec2-count",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-suspend-asg",
+      "creationTime": 1695288453636,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-suspend-asg:*",
+      "storedBytes": 7631,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:/aws/lambda/clm-pac-rules-GT2_6-capacity-monitoring-suspend-asg",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "cwl-xxxx-ec2-logs",
+      "creationTime": 1709538138515,
+      "retentionInDays": 365,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:cwl-xxxx-ec2-logs:*",
+      "storedBytes": 49766195844,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:cwl-xxxx-ec2-logs",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "cwl-xxxx-XXXX-uat-ct-logs01",
+      "creationTime": 1722325470310,
+      "metricFilterCount": 1,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:cwl-xxxx-XXXX-uat-ct-logs01:*",
+      "storedBytes": 37499121524,
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:cwl-xxxx-XXXX-uat-ct-logs01",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    },
+    {
+      "logGroupName": "vpc-flowlog-loggroup-vpc-f4efee4924c32459f",
+      "creationTime": 1690882799822,
+      "retentionInDays": 365,
+      "metricFilterCount": 0,
+      "arn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:vpc-flowlog-loggroup-vpc-f4efee4924c32459f:*",
+      "storedBytes": 47718486020,
+      "kmsKeyId": "arn:aws:kms:ap-southeast-1:111111111111:key/e5e23cdfb48659e2c0c3bd0330a039d5",
+      "logGroupClass": "STANDARD",
+      "logGroupArn": "arn:aws:logs:ap-southeast-1:111111111111:log-group:vpc-flowlog-loggroup-vpc-f4efee4924c32459f",
+      "deletionProtectionEnabled": false,
+      "bearerTokenAuthenticationEnabled": false
+    }
+  ]
+}

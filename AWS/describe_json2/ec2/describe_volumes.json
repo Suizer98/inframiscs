@@ -1,0 +1,5028 @@
+{
+  "Volumes": [
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-gp-02"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-17795112dfb708bba",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T08:28:35.545000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-17795112dfb708bba",
+          "InstanceId": "i-d423804051c97f180",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:01:49+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-01-1"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-2bc0fa3957b6de3de",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:02:00.483000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-2bc0fa3957b6de3de",
+          "InstanceId": "i-eef7b3be54e2789dd",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:02:21+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-ptl-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7a4542e1d0ab476bd",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:05:26.517000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-7a4542e1d0ab476bd",
+          "InstanceId": "i-9fb16323911544509",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:05:26+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-backup-01-0"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-645bf8dd7e2c77753",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:02:29.654000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-645bf8dd7e2c77753",
+          "InstanceId": "i-75d3e2cfea3be0c82",
+          "Device": "xvdb",
+          "State": "attached",
+          "AttachTime": "2024-03-26T03:36:13+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdweb-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "tier",
+          "Value": "web"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-ee665d2749c8de260",
+      "Size": 100,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-18T02:32:14.544000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-ee665d2749c8de260",
+          "InstanceId": "i-0daa6aa88d82d17f8",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-18T02:32:36+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-05"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-1fe6a134822152415",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T11:51:45.377000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-1fe6a134822152415",
+          "InstanceId": "i-533815350cad22790",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-16T11:52:07+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdrdsdb-02"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-c2ab3a1036a501cab",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:38:20.155000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-c2ab3a1036a501cab",
+          "InstanceId": "i-98711a3306ca7aa15",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:38:20+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-01-2"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-a07f248c059703828",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:44:59.351000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-a07f248c059703828",
+          "InstanceId": "i-869de30780de28cae",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:45:19+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-map-02"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-334cfe2f239657a6a",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T07:52:01.415000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-334cfe2f239657a6a",
+          "InstanceId": "i-3b2ca5f6fea29e933",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T07:52:23+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-c9fbf313e59df5906",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:01:29.065000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-c9fbf313e59df5906",
+          "InstanceId": "i-eef7b3be54e2789dd",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:01:28+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "tier",
+          "Value": "web"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdweb-02-0"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-e8af6d110925135a2",
+      "Size": 100,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-18T04:13:42.326000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-e8af6d110925135a2",
+          "InstanceId": "i-2ded6ac86022c586a",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-18T04:14:04+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-job-02"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-fd0e8972a3695e927",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T10:00:19.755000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-fd0e8972a3695e927",
+          "InstanceId": "i-d7c272a33f562383b",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T10:00:19+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-05"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7e227649ad99a0fba",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T11:51:46.790000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-7e227649ad99a0fba",
+          "InstanceId": "i-533815350cad22790",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-16T11:51:46+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-map-02"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7ef2d10ac26236e9b",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "available",
+      "CreateTime": "2023-10-30T07:52:03.021000+00:00",
+      "Attachments": [],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-ptl-02-0"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-a78cad1655e0764ea",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:07:38.476000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-a78cad1655e0764ea",
+          "InstanceId": "i-2851c54fab5fb3f6d",
+          "Device": "xvdb",
+          "State": "attached",
+          "AttachTime": "2024-05-23T14:46:37+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-04-0"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-1f8734904ee2703a5",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:50:45.055000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-1f8734904ee2703a5",
+          "InstanceId": "i-b2e2cbbd823e4ee3c",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:51:07+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-06"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-f1f8b9d126b9fee84",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:29:55.022000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-f1f8b9d126b9fee84",
+          "InstanceId": "i-8a14a8475ea235376",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:30:15+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-02-0"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-4aa80886da07ed815",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:38:29.177000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-4aa80886da07ed815",
+          "InstanceId": "i-6c95b14d729881414",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:38:51+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "webproxy"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdwebproxy-01"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7cb5197c22e561087",
+      "Size": 100,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2024-03-07T08:41:58.020000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-7cb5197c22e561087",
+          "InstanceId": "i-f19af07dec10282b3",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2024-03-07T08:51:10+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-8a3299b2bd40f4ca6",
+      "Size": 100,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "available",
+      "CreateTime": "2024-03-12T06:45:08.536000+00:00",
+      "Attachments": [],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-01-1"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-d1058d1bb1c93b012",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:44:28.175000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-d1058d1bb1c93b012",
+          "InstanceId": "i-869de30780de28cae",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:44:48+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "webproxy"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdwebproxy-02"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-f2aee32be38f6f113",
+      "Size": 100,
+      "SnapshotId": "snap-527ee6499de55c8d6",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2024-03-07T08:55:48.647000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-f2aee32be38f6f113",
+          "InstanceId": "i-62e14348d63c95653",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2024-03-07T08:55:48+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-05"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-ca30322e98d753ef3",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T11:52:18.301000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-ca30322e98d753ef3",
+          "InstanceId": "i-533815350cad22790",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-16T11:52:38+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-03"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-4cb9cd966526a1146",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:47:10.910000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-4cb9cd966526a1146",
+          "InstanceId": "i-d48ed43d0191269fc",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:47:10+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-gp-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-6ab018afa3f7ec27b",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T08:25:19.041000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-6ab018afa3f7ec27b",
+          "InstanceId": "i-9dc9d015712a5c41d",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T08:25:41+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-job-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-f5e30da9dc066de74",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:03:41.646000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-f5e30da9dc066de74",
+          "InstanceId": "i-4b4c277fad0e135fc",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:03:41+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-02-2"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-5b666cef0a1ea24c1",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:39:33.373000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-5b666cef0a1ea24c1",
+          "InstanceId": "i-6c95b14d729881414",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:39:53+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-gp-01"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-2ac6a8739d5517eb0",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T08:25:20.463000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-2ac6a8739d5517eb0",
+          "InstanceId": "i-9dc9d015712a5c41d",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T08:25:20+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-06"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-c82a3bc9d90f1e3af",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:29:23.309000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-c82a3bc9d90f1e3af",
+          "InstanceId": "i-8a14a8475ea235376",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:29:23+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-02"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-cb3e9001a4ec0764c",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:03:49.105000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-cb3e9001a4ec0764c",
+          "InstanceId": "i-4f5e122d42ac0b3e7",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:03:48+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3000,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-job-02"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-5fdafe9c7c66259b6",
+      "Size": 1000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T10:00:17.973000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-5fdafe9c7c66259b6",
+          "InstanceId": "i-d7c272a33f562383b",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T10:00:40+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdrdsdb-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7d9363b8b4b8244e4",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:33:29.164000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-7d9363b8b4b8244e4",
+          "InstanceId": "i-17826518b52e33c57",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:33:29+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-ptl-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-038626615add6eef5",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:05:25.164000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-038626615add6eef5",
+          "InstanceId": "i-9fb16323911544509",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:05:47+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-02-2"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-67009266a49cd39b0",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:03:47.757000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-67009266a49cd39b0",
+          "InstanceId": "i-4f5e122d42ac0b3e7",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:04:10+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-gp-02"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-be37ef0bd3a1887cc",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:01:28.299000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-be37ef0bd3a1887cc",
+          "InstanceId": "i-d423804051c97f180",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:01:28+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-02"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-3531f144f251d87fc",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T07:52:29.622000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-3531f144f251d87fc",
+          "InstanceId": "i-fdc49e83f48ea3ad1",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-11-02T07:52:29+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-02-1"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-402008527497aff21",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:03:47.774000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-402008527497aff21",
+          "InstanceId": "i-4f5e122d42ac0b3e7",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:04:10+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-map-01"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-b1364911d4527ccf2",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T07:40:10.826000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-b1364911d4527ccf2",
+          "InstanceId": "i-1c7dc07c4323521d6",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T07:40:10+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-un-01"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-92771fa859aefbbda",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:19:58.942000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-92771fa859aefbbda",
+          "InstanceId": "i-265a11e616309a6c3",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:19:58+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-02-1"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-eb06cddab17de4b09",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:39:02.164000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-eb06cddab17de4b09",
+          "InstanceId": "i-6c95b14d729881414",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:39:22+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-01"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-064d1578065d25453",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T07:43:13.442000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-064d1578065d25453",
+          "InstanceId": "i-63e8ef9187f29f3c2",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-11-02T07:43:13+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdweb-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "web"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-072e614a2dca975dd",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-18T02:32:16.076000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-072e614a2dca975dd",
+          "InstanceId": "i-0daa6aa88d82d17f8",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-18T02:32:15+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-01-0"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-e82c022dcb4263b33",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:43:55.312000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-e82c022dcb4263b33",
+          "InstanceId": "i-869de30780de28cae",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:44:17+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-06"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-9982c010f114aa5ec",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:29:21.974000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-9982c010f114aa5ec",
+          "InstanceId": "i-8a14a8475ea235376",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:29:44+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-mon-01"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-88e53bb8b771e8395",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:57:06.384000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-88e53bb8b771e8395",
+          "InstanceId": "i-a92f02a12f91b4e6b",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:57:06+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-02-0"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-981eb1abf7252d3ac",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:03:47.795000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-981eb1abf7252d3ac",
+          "InstanceId": "i-4f5e122d42ac0b3e7",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:04:10+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-02"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-83c0e46d783d50bd5",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T07:52:28.200000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-83c0e46d783d50bd5",
+          "InstanceId": "i-fdc49e83f48ea3ad1",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-11-02T07:52:50+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-04-2"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-8bc1c93402e731565",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:51:49.115000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-8bc1c93402e731565",
+          "InstanceId": "i-b2e2cbbd823e4ee3c",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:52:09+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-gp-03"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-83085095cc5bf5214",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:58:24.008000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-83085095cc5bf5214",
+          "InstanceId": "i-d30d32dfdce1b4781",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:58:23+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-04"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-79a6700285209121e",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:50:46.482000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-79a6700285209121e",
+          "InstanceId": "i-b2e2cbbd823e4ee3c",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:50:46+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-03-0"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-fafbe6a56a0759333",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:47:09.453000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-fafbe6a56a0759333",
+          "InstanceId": "i-d48ed43d0191269fc",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:47:31+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-backup-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-c5a0f4012ca30b06e",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:02:31.148000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-c5a0f4012ca30b06e",
+          "InstanceId": "i-75d3e2cfea3be0c82",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:02:31+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-93f22344cb69ed928",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T08:11:12.566000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-93f22344cb69ed928",
+          "InstanceId": "i-507aa127ea70997d7",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-11-02T08:11:12+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-ptl-02"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7d7dd5c6be2a13620",
+      "Size": 100,
+      "SnapshotId": "snap-0162345d3f713452c",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2024-05-23T13:59:16.204000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-7d7dd5c6be2a13620",
+          "InstanceId": "i-2851c54fab5fb3f6d",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2024-05-23T14:37:55+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-02"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-a5597d5082b147240",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:38:30.716000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-a5597d5082b147240",
+          "InstanceId": "i-6c95b14d729881414",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:38:30+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-e492941e0047b8e7e",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T07:43:12.096000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-e492941e0047b8e7e",
+          "InstanceId": "i-63e8ef9187f29f3c2",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-11-02T07:43:34+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdrdsdb-02-0"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-c060b231c20ea0208",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:38:18.768000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-c060b231c20ea0208",
+          "InstanceId": "i-98711a3306ca7aa15",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:38:40+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-06"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-1d3ca242ac4772159",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:30:26.246000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-1d3ca242ac4772159",
+          "InstanceId": "i-8a14a8475ea235376",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:30:46+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdweb-02"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "web"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-ff4348da1f318370a",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-18T04:13:43.982000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-ff4348da1f318370a",
+          "InstanceId": "i-2ded6ac86022c586a",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-18T04:13:43+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-bb0905e3757fd7bc1",
+      "Size": 100,
+      "SnapshotId": "snap-696e3680ed9295358",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2025-10-16T11:28:19.404000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-bb0905e3757fd7bc1",
+          "InstanceId": "i-3b2ca5f6fea29e933",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2025-10-16T11:29:54+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-01-2"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-3a111424d8b1ba5ff",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:02:31.702000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-3a111424d8b1ba5ff",
+          "InstanceId": "i-eef7b3be54e2789dd",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:02:52+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-81dd13bfd39315b33",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:43:56.701000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-81dd13bfd39315b33",
+          "InstanceId": "i-869de30780de28cae",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:43:56+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-gp-03-0"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-e776227fbbcb27a2b",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:58:22.635000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-e776227fbbcb27a2b",
+          "InstanceId": "i-d30d32dfdce1b4781",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:58:44+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-03-2"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-a73c8361472012672",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:48:13.677000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-a73c8361472012672",
+          "InstanceId": "i-d48ed43d0191269fc",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:48:34+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-un-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-124d61e004173de5b",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:19:57.588000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-124d61e004173de5b",
+          "InstanceId": "i-265a11e616309a6c3",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:20:19+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdrdsdb-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-eda0196cbec2af925",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-17T02:33:27.725000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-eda0196cbec2af925",
+          "InstanceId": "i-17826518b52e33c57",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-17T02:33:49+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "webproxy"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdwebproxy-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-4910f7e748b41ef73",
+      "Size": 100,
+      "SnapshotId": "snap-527ee6499de55c8d6",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2024-03-07T08:50:49.545000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-4910f7e748b41ef73",
+          "InstanceId": "i-f19af07dec10282b3",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2024-03-07T08:50:49+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-mon-01-0"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-a1afb1ed3e686f00b",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:57:04.969000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-a1afb1ed3e686f00b",
+          "InstanceId": "i-a92f02a12f91b4e6b",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:57:27+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-02"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7ddca8e1d5c984866",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T07:52:28.179000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-7ddca8e1d5c984866",
+          "InstanceId": "i-fdc49e83f48ea3ad1",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-11-02T07:52:50+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-04-1"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-8992aabbb53752d89",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:51:17.922000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-8992aabbb53752d89",
+          "InstanceId": "i-b2e2cbbd823e4ee3c",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:51:38+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-01-0"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-7edf2c93dd5dcdaf0",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T08:11:11.188000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-7edf2c93dd5dcdaf0",
+          "InstanceId": "i-507aa127ea70997d7",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-11-02T08:11:33+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-ptl-02"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-4c1760cd0c06bb4f1",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "available",
+      "CreateTime": "2023-10-30T09:07:39.859000+00:00",
+      "Attachments": [],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdentdb-01-0"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-d20fdba7c1217e479",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T08:01:27.571000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-d20fdba7c1217e479",
+          "InstanceId": "i-eef7b3be54e2789dd",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-16T08:01:49+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-map-01-0"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-aed1b96396e256fd2",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T07:40:09.333000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-aed1b96396e256fd2",
+          "InstanceId": "i-1c7dc07c4323521d6",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T07:40:31+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-9430e0ac05e84789e",
+      "Size": 100,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "available",
+      "CreateTime": "2024-03-04T07:07:54.438000+00:00",
+      "Attachments": [],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3750,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-05"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-0f02ed5185b1b5a13",
+      "Size": 1250,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T11:52:49.451000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-0f02ed5185b1b5a13",
+          "InstanceId": "i-533815350cad22790",
+          "Device": "/dev/xvdd",
+          "State": "attached",
+          "AttachTime": "2023-10-16T11:53:10+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 6000,
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdfile-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-762d2d0d8983f92ae",
+      "Size": 2000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-11-02T07:06:59.092000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-762d2d0d8983f92ae",
+          "InstanceId": "i-63e8ef9187f29f3c2",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-11-02T07:43:34+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "tier",
+          "Value": "webproxy"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdwebproxy-02-0"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-c9103129e776c441f",
+      "Size": 100,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2024-03-07T08:55:47.310000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-c9103129e776c441f",
+          "InstanceId": "i-62e14348d63c95653",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2024-03-07T08:56:09+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "db"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prdundb-03-1"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-ba1403b8a9747ac53",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-16T09:47:42.435000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-ba1403b8a9747ac53",
+          "InstanceId": "i-d48ed43d0191269fc",
+          "Device": "/dev/xvdc",
+          "State": "attached",
+          "AttachTime": "2023-10-16T09:48:02+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 300,
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-un-02"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-4f00e23d17aeac3cf",
+      "Size": 100,
+      "SnapshotId": "snap-3a05aa2be6e4f1862",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:23:56.281000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": true,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-4f00e23d17aeac3cf",
+          "InstanceId": "i-612c85f3684e5d28d",
+          "Device": "/dev/sda1",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:23:56+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 3000,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-job-01-0"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-4d22e318a9f9cf8ac",
+      "Size": 1000,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:03:40.334000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-4d22e318a9f9cf8ac",
+          "InstanceId": "i-4b4c277fad0e135fc",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:04:02+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "Iops": 1500,
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "vol-vm-xxxx-XXXX-prd-un-02-0"
+        },
+        {
+          "Key": "tier",
+          "Value": "app"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VolumeType": "gp2",
+      "MultiAttachEnabled": false,
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "VolumeId": "vol-040ae505a650f9bbf",
+      "Size": 500,
+      "SnapshotId": "",
+      "AvailabilityZone": "ap-southeast-11a",
+      "State": "in-use",
+      "CreateTime": "2023-10-30T09:23:54.750000+00:00",
+      "Attachments": [
+        {
+          "DeleteOnTermination": false,
+          "EbsCardIndex": 0,
+          "VolumeId": "vol-040ae505a650f9bbf",
+          "InstanceId": "i-612c85f3684e5d28d",
+          "Device": "/dev/xvdb",
+          "State": "attached",
+          "AttachTime": "2023-10-30T09:24:17+00:00"
+        }
+      ],
+      "Encrypted": true,
+      "KmsKeyId": "arn:aws:kms:ap-southeast-1:222222222222:key/ff87ab26ff802cd99b6a462d8b3c80b1"
+    }
+  ]
+}

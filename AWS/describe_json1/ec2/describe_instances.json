@@ -1,0 +1,3260 @@
+{
+  "Reservations": [
+    {
+      "ReservationId": "r-0e10e74f7a82c0e5d",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-02T09:22:41+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-55670e991bf0ddbad",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-02T09:23:02+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-7c6309d2532e6792e",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdc",
+              "Ebs": {
+                "AttachTime": "2023-10-02T09:23:02+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-5ae15507523b2b46f",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdd",
+              "Ebs": {
+                "AttachTime": "2023-10-02T09:23:02+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-b2d11e7b682075197",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-642febc41b019a39f7af85615f",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-02T09:22:40+00:00",
+                "AttachmentId": "eni-attach-a1ca816e02c34d5c0",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-c6fa82cb28e1fb1f5",
+                  "GroupName": "sgrp-XXXX-udb-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:d8:66:96:6e:b4",
+              "NetworkInterfaceId": "eni-db6d86e3975d451a3",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-165.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.2.7",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-165.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.2.7"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-8729cebe40cd0ce97",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-04T05:32:46+00:00",
+                "AttachmentId": "eni-attach-eef3299fd885eac1f",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-udb-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:74:ad:05:11:f4",
+              "NetworkInterfaceId": "eni-afb3314004410a62a",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-75.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.203",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-75.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.203"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-15T03:16:05+00:00",
+                "AttachmentId": "eni-attach-65f193cf08f7f9aa6",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-udb-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:50:e0:78:19:2c",
+              "NetworkInterfaceId": "eni-66321fe6a5dfb0a6c",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-11.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.11",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-11.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.11"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-c6fa82cb28e1fb1f5",
+              "GroupName": "sgrp-XXXX-udb-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet DB UN Server VM 1 XXXX"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "tier",
+              "Value": "db"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-udb-01"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-02T09:22:40+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-118eed52fcfca2268",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-165.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-udb-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.xlarge",
+          "LaunchTime": "2023-10-02T09:22:40+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-8729cebe40cd0ce97",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.2.7"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-0f7f04fd0b29f7f8c",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:21:28+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-ee217c8edfc78d82b",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:21:49+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-2dadfc3efdf4de321",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-ff9d51c81069423e35cf0ccdff",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:21:40+00:00",
+                "AttachmentId": "eni-attach-559c641bceb62e323",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-job-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:f6:c5:16:0c:94",
+              "NetworkInterfaceId": "eni-0e572416608c423a5",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-69.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.197",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-69.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.197"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:21:27+00:00",
+                "AttachmentId": "eni-attach-7006b8597c53be49e",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-cb5968f5ba1ad50e8",
+                  "GroupName": "sgrp-XXXX-job-01"
+                },
+                {
+                  "GroupId": "sg-f0fc5c0853acf649d",
+                  "GroupName": "sgrp-XXXX-soe"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:4b:d7:4f:d1:c0",
+              "NetworkInterfaceId": "eni-e4ab3be6da6c1cc6c",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-148.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.1.5",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-148.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.1.5"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-4cf045070400ce875",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-09T10:24:27+00:00",
+                "AttachmentId": "eni-attach-28ff9aaa3c68c491d",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-job-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:8c:c3:9d:39:f4",
+              "NetworkInterfaceId": "eni-3f1ae81df90a79982",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-5.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.5",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-5.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.5"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-cb5968f5ba1ad50e8",
+              "GroupName": "sgrp-XXXX-job-01"
+            },
+            {
+              "GroupId": "sg-f0fc5c0853acf649d",
+              "GroupName": "sgrp-XXXX-soe"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet App Job VM 1 XXXX"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "tier",
+              "Value": "app"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-job-01"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 4,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-03T12:21:27+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-b367b9e20c6693abd",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-148.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-job-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.2xlarge",
+          "LaunchTime": "2025-07-08T10:21:37+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-4cf045070400ce875",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.1.5"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-0bde27f571e859df4",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-03T13:01:51+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-541f012892d9f6587",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-03T13:02:12+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-612fc3c66c9be6089",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-3d81e8a7e9f0761f50c425fa02",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T13:01:51+00:00",
+                "AttachmentId": "eni-attach-ac3cedd8423157e76",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-703bf2694bdf82ed0",
+                  "GroupName": "sgrp-XXXX-gp-01"
+                },
+                {
+                  "GroupId": "sg-f0fc5c0853acf649d",
+                  "GroupName": "sgrp-XXXX-soe"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:4d:ae:ed:b1:10",
+              "NetworkInterfaceId": "eni-ae5e87b4e99884501",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-151.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.1.4",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-151.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.1.4"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-4cf045070400ce875",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T13:02:03+00:00",
+                "AttachmentId": "eni-attach-8e46317eea70989c4",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-gp-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:e3:46:3d:ca:2a",
+              "NetworkInterfaceId": "eni-02add8ace6c2d089c",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-73.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.201",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-73.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.201"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-14T08:26:01+00:00",
+                "AttachmentId": "eni-attach-58b208178dcaa5006",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-gp-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:c6:3d:8a:84:5a",
+              "NetworkInterfaceId": "eni-f6c5c79f1345f196d",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-9.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.9",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-9.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.9"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-703bf2694bdf82ed0",
+              "GroupName": "sgrp-XXXX-gp-01"
+            },
+            {
+              "GroupId": "sg-f0fc5c0853acf649d",
+              "GroupName": "sgrp-XXXX-soe"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "tier",
+              "Value": "app"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet App GP Server VM 1 XXXX"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-gp-01"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-03T13:01:51+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-524554418a6635705",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-151.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-gp-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.xlarge",
+          "LaunchTime": "2023-10-03T13:01:51+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-4cf045070400ce875",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.1.4"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-0d4daaadde42a0f13",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:26:40+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-6d5312f8cf5a0b1f7",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:27:01+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-55860e01e8257c3f2",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-9edab2d0cd08d5a941cb98fd6b",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:26:39+00:00",
+                "AttachmentId": "eni-attach-ad77ca41f7b3f9801",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-7650972b67a042a18",
+                  "GroupName": "sgrp-XXXX-file-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:02:d8:9c:35:ec",
+              "NetworkInterfaceId": "eni-42aef1c54f46113a0",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-164.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.2.5",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-164.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.2.5"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-8729cebe40cd0ce97",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:26:52+00:00",
+                "AttachmentId": "eni-attach-c9163406ff6e2060a",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-file-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:2f:43:a1:71:0e",
+              "NetworkInterfaceId": "eni-bfad35208b1887d34",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-70.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.198",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-70.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.198"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-15T03:05:50+00:00",
+                "AttachmentId": "eni-attach-3be2d4c8b7445edcc",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-file-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:38:61:0a:c0:92",
+              "NetworkInterfaceId": "eni-bb27882a74f3f7048",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-6.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.6",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-6.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.6"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-7650972b67a042a18",
+              "GroupName": "sgrp-XXXX-file-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet App File Server VM 1 XXXX"
+            },
+            {
+              "Key": "tier",
+              "Value": "db"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-file-01"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-03T12:26:39+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-5d3cc0cd1958d2281",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-164.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-file-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "m5.xlarge",
+          "LaunchTime": "2023-10-03T12:26:39+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-8729cebe40cd0ce97",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.2.5"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-0901c658af097808b",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:34:17+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-af6aed2cc0b460f21",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:34:38+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-25ab9e145b9f7c71b",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-1d2275157889485ef1aed76c87",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:34:29+00:00",
+                "AttachmentId": "eni-attach-7732fe93c14e9eb38",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-unapp-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:c1:4f:b2:98:a8",
+              "NetworkInterfaceId": "eni-0d8b7ee4672087128",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-71.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.199",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-71.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.199"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:34:16+00:00",
+                "AttachmentId": "eni-attach-c726d7b67e3b4397e",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-f0fc5c0853acf649d",
+                  "GroupName": "sgrp-XXXX-soe"
+                },
+                {
+                  "GroupId": "sg-08b9a430cb789f96c",
+                  "GroupName": "sgrp-XXXX-uapp-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:d3:24:ad:67:fa",
+              "NetworkInterfaceId": "eni-ea9058a7573897066",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-149.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.1.8",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-149.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.1.8"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-4cf045070400ce875",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-14T08:46:00+00:00",
+                "AttachmentId": "eni-attach-bbad13fd6e1575582",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-un-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:c0:79:91:39:74",
+              "NetworkInterfaceId": "eni-e63f79a2f422d5866",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-7.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.7",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-7.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.7"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-f0fc5c0853acf649d",
+              "GroupName": "sgrp-XXXX-soe"
+            },
+            {
+              "GroupId": "sg-08b9a430cb789f96c",
+              "GroupName": "sgrp-XXXX-uapp-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "tier",
+              "Value": "app"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-uapp-01"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet App Job VM 1 XXXX"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 4,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-03T12:34:16+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-918bf37a964d19bb7",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-149.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-un-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.2xlarge",
+          "LaunchTime": "2023-12-18T06:36:51+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-4cf045070400ce875",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.1.8"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-049033d960dc8620b",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:45:28+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-425b3b26553bbcf8b",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-03T12:45:49+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-9830698ee32f55ac8",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-411bcdfb1c05b48212efa8879f",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:45:39+00:00",
+                "AttachmentId": "eni-attach-a0e364c929f86b236",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-map-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:92:42:f3:75:14",
+              "NetworkInterfaceId": "eni-3d30bb86212599d46",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-72.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.200",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-72.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.200"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T12:45:27+00:00",
+                "AttachmentId": "eni-attach-0c485598e169aaacb",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-f0fc5c0853acf649d",
+                  "GroupName": "sgrp-XXXX-soe"
+                },
+                {
+                  "GroupId": "sg-f1e22e496da168c30",
+                  "GroupName": "sgrp-XXXX-map-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:5a:9f:36:ef:d8",
+              "NetworkInterfaceId": "eni-507d54161b793260c",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-150.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.1.6",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-150.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.1.6"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-4cf045070400ce875",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-14T08:33:43+00:00",
+                "AttachmentId": "eni-attach-c0e6ecc15db06b724",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-map-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:c5:03:91:6a:9e",
+              "NetworkInterfaceId": "eni-95b6e6fd4f3fad5b5",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-8.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.8",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-8.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.8"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-f0fc5c0853acf649d",
+              "GroupName": "sgrp-XXXX-soe"
+            },
+            {
+              "GroupId": "sg-f1e22e496da168c30",
+              "GroupName": "sgrp-XXXX-map-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "tier",
+              "Value": "app"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet App Map VM 1 XXXX"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-map-01"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-03T12:45:27+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-318d451a237756298",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-150.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-map-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.xlarge",
+          "LaunchTime": "2023-10-03T12:45:27+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-4cf045070400ce875",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.1.6"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-07fb533738fe5f87e",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2026-06-29T03:13:47+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-ffaeebc80b38ff5d5",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-03T13:08:27+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-827cea30b064530e0",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-194ec4ec82c97110e2919c11fa",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-03T13:08:06+00:00",
+                "AttachmentId": "eni-attach-9843643cbafce9060",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-f0fc5c0853acf649d",
+                  "GroupName": "sgrp-XXXX-soe"
+                },
+                {
+                  "GroupId": "sg-4c9b120c417998692",
+                  "GroupName": "sgrp-XXXX-ptl-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:8d:6a:8b:16:1e",
+              "NetworkInterfaceId": "eni-300fb71f612095d75",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-152.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.1.7",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-152.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.1.7"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-4cf045070400ce875",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2025-10-23T09:08:53+00:00",
+                "AttachmentId": "eni-attach-cd32d93142cd77b1d",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-ptl-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:d3:af:ca:3f:0e",
+              "NetworkInterfaceId": "eni-8c1bce568feca6004",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-74.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.202",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-74.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.202"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2025-10-23T09:09:41+00:00",
+                "AttachmentId": "eni-attach-a4bc4b9fa8ef63966",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-ptl-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:68:52:e4:f1:e2",
+              "NetworkInterfaceId": "eni-ae878a0df985496c9",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-10.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.10",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-10.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.10"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-f0fc5c0853acf649d",
+              "GroupName": "sgrp-XXXX-soe"
+            },
+            {
+              "GroupId": "sg-4c9b120c417998692",
+              "GroupName": "sgrp-XXXX-ptl-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "tier",
+              "Value": "app"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet App Portal Server VM 1 XXXX"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-ptl-01"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-03T13:08:06+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-259663a51d7130462",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-152.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-ptl-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.xlarge",
+          "LaunchTime": "2026-06-29T03:14:17+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-4cf045070400ce875",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.1.7"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-0d93ec7d0fea22386",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-04T04:34:54+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-cb299afbd06e2eaca",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-04T04:35:15+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-4617bf0da264d1e02",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdc",
+              "Ebs": {
+                "AttachTime": "2023-10-04T04:35:15+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-98fb3d80ed184d823",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdd",
+              "Ebs": {
+                "AttachTime": "2023-10-04T04:35:15+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-ba6c8635e5545b80f",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-185d6a816afebeb41e4aba3b93",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-04T04:34:54+00:00",
+                "AttachmentId": "eni-attach-3a044fbcf1e834e1e",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-50b79733dcf4240a1",
+                  "GroupName": "sgrp-XXXX-edb-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:e8:61:af:41:20",
+              "NetworkInterfaceId": "eni-b8cbcf4b4130ce716",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-166.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.2.4",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-166.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.2.4"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-8729cebe40cd0ce97",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-04T04:36:04+00:00",
+                "AttachmentId": "eni-attach-e78315b819dbfa437",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-edb-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:ec:13:e3:89:1e",
+              "NetworkInterfaceId": "eni-02012b0db877b457a",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-76.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.204",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-76.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.204"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-14T08:48:19+00:00",
+                "AttachmentId": "eni-attach-40f2107dae4bb0885",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-edb-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:b7:37:87:78:00",
+              "NetworkInterfaceId": "eni-84e2e61a08143f841",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-12.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.12",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-12.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.12"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-50b79733dcf4240a1",
+              "GroupName": "sgrp-XXXX-edb-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-edb-01"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet DB Enterprise Server VM 1 XXXX"
+            },
+            {
+              "Key": "tier",
+              "Value": "db"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-04T04:34:54+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-73dc407ad5e3da486",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-166.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-edb-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.xlarge",
+          "LaunchTime": "2023-10-04T04:34:54+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-8729cebe40cd0ce97",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.2.4"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-05b765f4d59e92885",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-04T05:01:39+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-cd1e89dda71b48667",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-04T05:02:00+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-33726fe81b61ff50c",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-8278886ca56ff69a829f4ede8a",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-04T05:01:51+00:00",
+                "AttachmentId": "eni-attach-54d97d464914a2dba",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-rdb-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:9a:b8:0a:e7:ba",
+              "NetworkInterfaceId": "eni-3e93edb265f562253",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-77.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.205",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-77.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.205"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-04T05:01:39+00:00",
+                "AttachmentId": "eni-attach-155f1b55d2ea34eb7",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-7079bcbb558022f61",
+                  "GroupName": "sgrp-XXXX-rdb-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:a9:5f:62:09:38",
+              "NetworkInterfaceId": "eni-c43c686b78c0a3ffb",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-167.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.2.6",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-167.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.2.6"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-8729cebe40cd0ce97",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-15T03:10:23+00:00",
+                "AttachmentId": "eni-attach-c876c680a2ba02b35",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-rdb-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:72:b9:ba:2e:1a",
+              "NetworkInterfaceId": "eni-da43a104d19144ba8",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-13.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.13",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-13.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.13"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-7079bcbb558022f61",
+              "GroupName": "sgrp-XXXX-rdb-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-rdb-01"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet DB Relational Data Store Server VM 1 XXXX"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "Created-by",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "tier",
+              "Value": "db"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-04T05:01:39+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-1e3aaa624e8624a11",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-167.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-rdb-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "r5.xlarge",
+          "LaunchTime": "2023-10-04T05:01:39+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-8729cebe40cd0ce97",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.2.6"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-08a28e1bad05fde49",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2023-10-12T08:08:34+00:00",
+                "DeleteOnTermination": true,
+                "Status": "attached",
+                "VolumeId": "vol-b22618eecf2e9b8de",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2023-10-12T08:08:55+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-97f3646271e219eb0",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-6c7834385cc74c4bee671f0c9e",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-12T08:08:33+00:00",
+                "AttachmentId": "eni-attach-191588d9b046b1432",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-f0fc5c0853acf649d",
+                  "GroupName": "sgrp-XXXX-soe"
+                },
+                {
+                  "GroupId": "sg-a14e1807ea7d32a83",
+                  "GroupName": "sgrp-XXXX-web-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:30:40:bf:d3:5e",
+              "NetworkInterfaceId": "eni-a86d12db3d9c41410",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-132.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.3.4",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-132.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.3.4"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-f129cd04587b113d5",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-10-12T08:08:46+00:00",
+                "AttachmentId": "eni-attach-85b6de35b7ad87e5d",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-web-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:8e:a5:11:13:74",
+              "NetworkInterfaceId": "eni-67a511770f90fc7d9",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-68.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.196",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-68.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.196"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2023-11-09T10:06:50+00:00",
+                "AttachmentId": "eni-attach-a6ce2a3744d6c1ef3",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-web-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:46:f5:9e:11:ee",
+              "NetworkInterfaceId": "eni-94d0056a8969b824b",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-4.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.4",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-4.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.4"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-f0fc5c0853acf649d",
+              "GroupName": "sgrp-XXXX-soe"
+            },
+            {
+              "GroupId": "sg-a14e1807ea7d32a83",
+              "GroupName": "sgrp-XXXX-web-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet Web VM 1 XXXX"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-web-01"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "tier",
+              "Value": "web"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2023-10-12T08:08:33+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-e3108b47b58f03d5e",
+          "ImageId": "ami-0b2a30c1b715279c6",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-132.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "m5.xlarge",
+          "LaunchTime": "2023-10-12T08:08:33+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-f129cd04587b113d5",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.3.4"
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-03dbcc9fe848f5a9b",
+      "OwnerId": "111111111111",
+      "Groups": [],
+      "Instances": [
+        {
+          "Architecture": "x86_64",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/sda1",
+              "Ebs": {
+                "AttachTime": "2025-11-28T11:19:35+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-063ffcfa0178cf081",
+                "EbsCardIndex": 0
+              }
+            },
+            {
+              "DeviceName": "/dev/xvdb",
+              "Ebs": {
+                "AttachTime": "2024-03-05T03:06:35+00:00",
+                "DeleteOnTermination": false,
+                "Status": "attached",
+                "VolumeId": "vol-bd8b2fab070e82175",
+                "EbsCardIndex": 0
+              }
+            }
+          ],
+          "ClientToken": "terraform-f0b5de5009ed6264ef4583785a",
+          "EbsOptimized": false,
+          "EnaSupport": true,
+          "Hypervisor": "xen",
+          "IamInstanceProfile": {
+            "Arn": "arn:aws:iam::111111111111:instance-profile/u-XXXX-iamr-ec2-profile",
+            "Id": "AIPAT3HFVA5MHMQA3HPHA"
+          },
+          "NetworkInterfaces": [
+            {
+              "Attachment": {
+                "AttachTime": "2024-03-05T03:06:26+00:00",
+                "AttachmentId": "eni-attach-d3c6bcbcc5df2df1d",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 2,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-backup-web-proxy-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:ff:31:50:7c:0b",
+              "NetworkInterfaceId": "eni-7c53ed90e8eff3f55",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-230-14.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.229.14",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-230-14.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.229.14"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-6d881c21d6ae8bf24",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2024-03-05T03:06:13+00:00",
+                "AttachmentId": "eni-attach-7ed6d7b1ae8c52c70",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "",
+              "Groups": [
+                {
+                  "GroupId": "sg-8464f6c0a477d829a",
+                  "GroupName": "sgrp-XXXX-adjoin-01"
+                },
+                {
+                  "GroupId": "sg-f0fc5c0853acf649d",
+                  "GroupName": "sgrp-XXXX-soe"
+                },
+                {
+                  "GroupId": "sg-40ce930f842de3d88",
+                  "GroupName": "sgrp-XXXX-webproxy-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:fc:85:11:cb:8b",
+              "NetworkInterfaceId": "eni-6a752a178f31b7cec",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-59-231-180.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.4.4",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-59-231-180.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.4.4"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-1b66049e48f0a3eb1",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            },
+            {
+              "Attachment": {
+                "AttachTime": "2024-03-05T03:06:26+00:00",
+                "AttachmentId": "eni-attach-eb61b2b7942e88924",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "Status": "attached",
+                "NetworkCardIndex": 0
+              },
+              "Description": "eni-XXXX-mgmt-web-proxy-01",
+              "Groups": [
+                {
+                  "GroupId": "sg-0b51d54f35b16bee7",
+                  "GroupName": "sgrp-XXXX-management-01"
+                },
+                {
+                  "GroupId": "sg-1269df882c3567c92",
+                  "GroupName": "sgrp-XXXX-baas-backup-01"
+                }
+              ],
+              "Ipv6Addresses": [],
+              "MacAddress": "0a:6d:a7:b3:c3:5d",
+              "NetworkInterfaceId": "eni-4acfe14e529462679",
+              "OwnerId": "111111111111",
+              "PrivateDnsName": "ip-10-58-20-78.ap-southeast-1.compute.internal",
+              "PrivateIpAddress": "10.20.228.206",
+              "PrivateIpAddresses": [
+                {
+                  "Primary": true,
+                  "PrivateDnsName": "ip-10-58-20-78.ap-southeast-1.compute.internal",
+                  "PrivateIpAddress": "10.20.228.206"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Status": "in-use",
+              "SubnetId": "subnet-67ccf2f6d8e2796ff",
+              "VpcId": "vpc-f4efee4924c32459f",
+              "InterfaceType": "interface",
+              "Operator": {
+                "Managed": false
+              }
+            }
+          ],
+          "RootDeviceName": "/dev/sda1",
+          "RootDeviceType": "ebs",
+          "SecurityGroups": [
+            {
+              "GroupId": "sg-8464f6c0a477d829a",
+              "GroupName": "sgrp-XXXX-adjoin-01"
+            },
+            {
+              "GroupId": "sg-f0fc5c0853acf649d",
+              "GroupName": "sgrp-XXXX-soe"
+            },
+            {
+              "GroupId": "sg-40ce930f842de3d88",
+              "GroupName": "sgrp-XXXX-webproxy-01"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Tags": [
+            {
+              "Key": "Author",
+              "Value": "Vendor"
+            },
+            {
+              "Key": "Name",
+              "Value": "vm-XXXX-proxy-01"
+            },
+            {
+              "Key": "environment",
+              "Value": "uat"
+            },
+            {
+              "Key": "tier",
+              "Value": "webproxy"
+            },
+            {
+              "Key": "purpose",
+              "Value": "Intranet Web proxy 1 XXXX"
+            },
+            {
+              "Key": "project-code",
+              "Value": "XXXX"
+            },
+            {
+              "Key": "zone",
+              "Value": "ia"
+            },
+            {
+              "Key": "agency-code",
+              "Value": "xxxx"
+            },
+            {
+              "Key": "OS",
+              "Value": "Windows"
+            }
+          ],
+          "VirtualizationType": "hvm",
+          "CpuOptions": {
+            "CoreCount": 2,
+            "ThreadsPerCore": 2
+          },
+          "CapacityReservationSpecification": {
+            "CapacityReservationPreference": "open"
+          },
+          "HibernationOptions": {
+            "Configured": false
+          },
+          "MetadataOptions": {
+            "State": "applied",
+            "HttpTokens": "required",
+            "HttpPutResponseHopLimit": 1,
+            "HttpEndpoint": "enabled",
+            "HttpProtocolIpv6": "disabled",
+            "InstanceMetadataTags": "disabled"
+          },
+          "EnclaveOptions": {
+            "Enabled": false
+          },
+          "PlatformDetails": "Windows",
+          "UsageOperation": "RunInstances:0002",
+          "UsageOperationUpdateTime": "2024-03-05T03:06:13+00:00",
+          "PrivateDnsNameOptions": {
+            "HostnameType": "ip-name",
+            "EnableResourceNameDnsARecord": false,
+            "EnableResourceNameDnsAAAARecord": false
+          },
+          "MaintenanceOptions": {
+            "AutoRecovery": "default",
+            "RebootMigration": "default"
+          },
+          "CurrentInstanceBootMode": "legacy-bios",
+          "NetworkPerformanceOptions": {
+            "BandwidthWeighting": "default"
+          },
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "InstanceId": "i-5569c2f659cf0f69a",
+          "ImageId": "ami-8139b511d00aad49f",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "PrivateDnsName": "ip-10-59-231-180.ap-southeast-1.compute.internal",
+          "PublicDnsName": "",
+          "StateTransitionReason": "",
+          "KeyName": "vm-XXXX-proxy-01",
+          "AmiLaunchIndex": 0,
+          "ProductCodes": [],
+          "InstanceType": "m5.xlarge",
+          "LaunchTime": "2026-01-23T05:37:39+00:00",
+          "Placement": {
+            "AvailabilityZoneId": "apse1-az1",
+            "GroupName": "",
+            "Tenancy": "default",
+            "AvailabilityZone": "ap-southeast-11a"
+          },
+          "Platform": "windows",
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "SubnetId": "subnet-1b66049e48f0a3eb1",
+          "VpcId": "vpc-f4efee4924c32459f",
+          "PrivateIpAddress": "10.20.4.4"
+        }
+      ]
+    }
+  ]
+}

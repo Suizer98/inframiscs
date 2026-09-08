@@ -1,0 +1,139 @@
+{
+  "PrefixLists": [
+    {
+      "PrefixListId": "pl-1f30fb442fe92b348",
+      "AddressFamily": "IPv6",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-1f30fb442fe92b348",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ipv6.ec2-instance-connect",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-7a23c9ef403129abd",
+      "AddressFamily": "IPv6",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-7a23c9ef403129abd",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ipv6.vpc-lattice",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-9515b56e3b8d41469",
+      "AddressFamily": "IPv6",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-9515b56e3b8d41469",
+      "PrefixListName": "com.amazonaws.global.ipv6.cloudfront.origin-facing",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-6a2dda574790e93cd",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-6a2dda574790e93cd",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.vpc-lattice",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-6f345f5011cb7d271",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-6f345f5011cb7d271",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ec2-instance-connect",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-b880949fd9ce5a401",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-b880949fd9ce5a401",
+      "PrefixListName": "com.amazonaws.global.groundstation",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-49c1f3109db6cc0de",
+      "AddressFamily": "IPv6",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-49c1f3109db6cc0de",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ipv6.route53-healthchecks",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-94ca6b6118e51eeed",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-94ca6b6118e51eeed",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.route53-healthchecks",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-f596596667d36a01b",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-f596596667d36a01b",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.secretsmanager-managed-external-secrets",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-1b7de077",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-1b7de077",
+      "PrefixListName": "com.amazonaws.global.cloudfront.origin-facing",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-8efe6113",
+      "AddressFamily": "IPv6",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-8efe6113",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ipv6.s3",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-73972e8c",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-73972e8c",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.dynamodb",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-87412a61",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-87412a61",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.s3",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-c19ea38c",
+      "AddressFamily": "IPv6",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-c19ea38c",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.ipv6.dynamodb",
+      "Tags": [],
+      "OwnerId": "AWS"
+    },
+    {
+      "PrefixListId": "pl-60772a69",
+      "AddressFamily": "IPv4",
+      "State": "create-complete",
+      "PrefixListArn": "arn:aws:ec2:ap-southeast-1:aws:prefix-list/pl-60772a69",
+      "PrefixListName": "com.amazonaws.ap-southeast-1.s3express",
+      "Tags": [],
+      "OwnerId": "AWS"
+    }
+  ]
+}

@@ -1,0 +1,5270 @@
+{
+  "SecurityGroups": [
+    {
+      "GroupId": "sg-703bf2694bdf82ed0",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 50000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to job server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "outbound to Map",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "outbound to UN server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6006,
+          "ToPort": 6006,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 12221,
+          "ToPort": 12221,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "To Common Forward Proxy",
+              "CidrIp": "10.20.230.227/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4369,
+          "ToPort": 4369,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1098,
+          "ToPort": 1098,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29079,
+          "ToPort": 29081,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29085,
+          "ToPort": 29090,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.3.4/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 9876,
+          "ToPort": 9876,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 2443,
+          "ToPort": 2443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4000,
+          "ToPort": 4003,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to job server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6099,
+          "ToPort": 6099,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 14333,
+          "ToPort": 14333,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to UN DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-c6fa82cb28e1fb1f5"
+            },
+            {
+              "Description": "Traffic to ENT DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-50b79733dcf4240a1"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-gp-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-703bf2694bdf82ed0",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-gp-01",
+      "Description": "XXXX intranet GP Server app Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Portal Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from UN Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Map Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Allow traffic from app alb sgrp to GP server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "ArcGIS Server Token generation from web server",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6006,
+          "ToPort": 6006,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Portal Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Map Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4000,
+          "ToPort": 4003,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Portal Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6099,
+          "ToPort": 6099,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Portal Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from UN Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Map Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from UN Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Allow traffic from app alb sgrp to GP server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "Traffic from Portal Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from Portal Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from UN Server to GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-8464f6c0a477d829a",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 464,
+          "ToPort": 464,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 464,
+          "ToPort": 464,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 8834,
+          "ToPort": 8834,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Outgoing to VMS",
+              "CidrIp": "10.20.230.230/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 135,
+          "ToPort": 135,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 49152,
+          "ToPort": 65535,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 53,
+          "ToPort": 53,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 389,
+          "ToPort": 389,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 8530,
+          "ToPort": 8531,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Outgoing to WSUS",
+              "CidrIp": "10.20.230.245/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 389,
+          "ToPort": 389,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 123,
+          "ToPort": 123,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Outgoing to connect to CMIF Endpoint CIDR",
+              "CidrIp": "10.20.230.32/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 88,
+          "ToPort": 88,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 3268,
+          "ToPort": 3269,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 137,
+          "ToPort": 138,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 135,
+          "ToPort": 135,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 636,
+          "ToPort": 636,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 53,
+          "ToPort": 53,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 88,
+          "ToPort": 88,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For AD Connection",
+              "CidrIp": "10.20.230.112/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-adjoin-01"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-8464f6c0a477d829a",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-adjoin-01",
+      "Description": "XXXX intranet Adjoin whitelist Security Group",
+      "IpPermissions": []
+    },
+    {
+      "GroupId": "sg-40ce930f842de3d88",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [
+            {
+              "Description": "from XXXX web proxy to web01 for license manager",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "from XXXX web proxy to web01",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-webproxy-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-40ce930f842de3d88",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-webproxy-01",
+      "Description": "XXXX intranet web proxy Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 50000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "Description": "inbound from Map",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "RQ-20260814-00011072 Inbound from UATIA FWINL",
+              "CidrIp": "10.20.230.229/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "inbound from Web",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [
+            {
+              "Description": "from XXXX intranet portal server",
+              "CidrIp": "10.20.1.7/32"
+            },
+            {
+              "Description": "inbound from UATIA FWINL",
+              "CidrIp": "10.20.230.96/28"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-50b79733dcf4240a1",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from ENT DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from ENT DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from ENT DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from ENT DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-edb-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-50b79733dcf4240a1",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-edb-01",
+      "Description": "XXXX intranet enterprise DB Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 22,
+          "ToPort": 22,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "RQ-20260310-00008855",
+              "CidrIp": "10.20.230.226/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 14333,
+          "ToPort": 14333,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-0b51d54f35b16bee7",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4122,
+          "ToPort": 4122,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "to pull software and pattern updates",
+              "CidrIp": "10.20.230.215/32"
+            },
+            {
+              "Description": "to pull software and pattern updates",
+              "CidrIp": "10.20.230.214/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4120,
+          "ToPort": 4120,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "heartbeat port from Agent to EPS/DSM",
+              "CidrIp": "10.20.230.210/31"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "to pull software and pattern updates",
+              "CidrIp": "10.20.230.215/32"
+            },
+            {
+              "Description": "connection to SPS for file reputation",
+              "CidrIp": "10.20.230.212/31"
+            },
+            {
+              "Description": "connection to SPS for file reputation",
+              "CidrIp": "10.20.230.208/31"
+            },
+            {
+              "Description": "to pull software and pattern updates",
+              "CidrIp": "10.20.230.214/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-management-01"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-0b51d54f35b16bee7",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-management-01",
+      "Description": "XXXX intranet Management ENI Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 22,
+          "ToPort": 22,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.160/27"
+            },
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.192/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.192/27"
+            },
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.160/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 135,
+          "ToPort": 135,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.192/27"
+            },
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.160/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4118,
+          "ToPort": 4118,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "EPS-Manager to Agent",
+              "CidrIp": "10.20.230.241/32"
+            },
+            {
+              "Description": "EPS-Manager to Agent",
+              "CidrIp": "10.20.230.238/32"
+            },
+            {
+              "Description": "EPS-Manager to Agent",
+              "CidrIp": "10.20.230.240/32"
+            },
+            {
+              "Description": "EPS-Manager to Agent",
+              "CidrIp": "10.20.230.239/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.192/27"
+            },
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.160/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 3389,
+          "ToPort": 3389,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For CyberArk Connection",
+              "CidrIp": "10.20.229.192/27"
+            },
+            {
+              "Description": "For CyberArk Connection",
+              "CidrIp": "10.20.229.160/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 5985,
+          "ToPort": 5986,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.160/27"
+            },
+            {
+              "Description": "For CyberArk Password Rotation",
+              "CidrIp": "10.20.229.192/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-cb5968f5ba1ad50e8",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 50000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to map servers",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "outbound to portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to app alb",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 12221,
+          "ToPort": 12221,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "To Common Forward Proxy",
+              "CidrIp": "10.20.230.227/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 10001,
+          "ToPort": 10020,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Return Traffic to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.3.4/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to app alb",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 22,
+          "ToPort": 22,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "To ace sftp",
+              "CidrIp": "10.20.230.244/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 25,
+          "ToPort": 25,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow connection to common uat SMTP",
+              "CidrIp": "10.20.230.228/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 2443,
+          "ToPort": 2443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow Job server to access rds server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to app alb",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 14333,
+          "ToPort": 14333,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to ENT DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-50b79733dcf4240a1"
+            },
+            {
+              "Description": "Traffic to UN DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-c6fa82cb28e1fb1f5"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-job-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-cb5968f5ba1ad50e8",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-job-01",
+      "Description": "XXXX intranet app Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow portal server to access UAT Internal License Manager (for testing purposes)",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Allow un server to access UAT Internal License Manager (for testing purposes)",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Allow map server to access UAT Internal License Manager (for testing purposes)",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Allow gp server to access UAT Internal License Manager (for testing purposes)",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "inbound from App ALB",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-a14e1807ea7d32a83",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow traffic from web server to the app tier load balancer",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "ArcGIS Server Token generation to map server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "ArcGIS Server Token generation to un server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "ArcGIS Server Token generation to gp server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 12221,
+          "ToPort": 12221,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "To Common Forward Proxy",
+              "CidrIp": "10.20.230.227/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 10001,
+          "ToPort": 10020,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow traffic from web server to the app tier load balancer",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "ArcGIS Workflow Manager Server to un server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Web proxy",
+              "UserId": "111111111111",
+              "GroupId": "sg-40ce930f842de3d88"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow traffic from web server to the app tier load balancer",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "ArcGIS Server Token generation to portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-web-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-a14e1807ea7d32a83",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-web-01",
+      "Description": "XXXX intranet web Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 50000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "Description": "inbound from GP",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "inbound from Map",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1024,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "Description": "inbound from App ALB",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [
+            {
+              "Description": "from XXXX web proxy to web01 for license manager",
+              "UserId": "111111111111",
+              "GroupId": "sg-40ce930f842de3d88"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "from XXXX web proxy to web01",
+              "UserId": "111111111111",
+              "GroupId": "sg-40ce930f842de3d88"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-08b9a430cb789f96c",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "outbound to Map",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "outbound to GP server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6006,
+          "ToPort": 6006,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 12221,
+          "ToPort": 12221,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "To Common Forward Proxy",
+              "CidrIp": "10.20.230.227/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1098,
+          "ToPort": 1098,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 25,
+          "ToPort": 25,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow connection to common uat SMTP",
+              "CidrIp": "10.20.230.228/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4000,
+          "ToPort": 4003,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Job server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6099,
+          "ToPort": 6099,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 14333,
+          "ToPort": 14333,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to UN DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-c6fa82cb28e1fb1f5"
+            },
+            {
+              "Description": "Traffic to ENT DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-50b79733dcf4240a1"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-uapp-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-08b9a430cb789f96c",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-uapp-01",
+      "Description": "XXXX intranet UN app Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from Map Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from GP Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from portal Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Allow traffic from app alb sgrp to UN app server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "ArcGIS Server Token generation from web server",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6006,
+          "ToPort": 6006,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from portal Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from GP Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4000,
+          "ToPort": 4003,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from GP Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from portal Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6099,
+          "ToPort": 6099,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from GP Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from portal Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Allow traffic from app alb sgrp to UN app server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "Traffic from Map Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from portal Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "ArcGIS Workflow Manager Server from web server",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from portal Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from GP Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from Map Server to UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-4c9b120c417998692",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 12221,
+          "ToPort": 12221,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "To Common Forward Proxy",
+              "CidrIp": "10.20.230.227/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 135,
+          "ToPort": 135,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29079,
+          "ToPort": 29081,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 53,
+          "ToPort": 53,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.243/32"
+            },
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.242/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 389,
+          "ToPort": 389,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow to SOE for Ldap",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "Allow to SOE for Ldap",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29085,
+          "ToPort": 29090,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            },
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 25,
+          "ToPort": 25,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow connection to common uat SMTP",
+              "CidrIp": "10.20.230.228/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Job servers",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 135,
+          "ToPort": 135,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 53,
+          "ToPort": 53,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.243/32"
+            },
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.242/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 50000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Map",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "outbound to GP",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            },
+            {
+              "Description": "outbound to Map server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "outbound to UN server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "outbound to GP server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4369,
+          "ToPort": 4369,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 389,
+          "ToPort": 389,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 3268,
+          "ToPort": 3268,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 9876,
+          "ToPort": 9876,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 88,
+          "ToPort": 88,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 2443,
+          "ToPort": 2443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 636,
+          "ToPort": 636,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 48001,
+          "ToPort": 48002,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 14333,
+          "ToPort": 14333,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to ENT DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-50b79733dcf4240a1"
+            },
+            {
+              "Description": "Traffic to UN DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-c6fa82cb28e1fb1f5"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 88,
+          "ToPort": 88,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-ptl-01"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-4c9b120c417998692",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-ptl-01",
+      "Description": "XXXX intranet Portal Server app Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from UN Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Map Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from GP Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6006,
+          "ToPort": 6006,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from Map Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 10001,
+          "ToPort": 10020,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Web Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            },
+            {
+              "Description": "Traffic from job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4000,
+          "ToPort": 4003,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from GP Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1098,
+          "ToPort": 1098,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from GP Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6099,
+          "ToPort": 6099,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from Map Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Map Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from GP Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Allow traffic from app alb sgrp to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "Traffic from UN Server to Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "ArcGIS Server Token generation from web server",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-ea550243621d8f23d",
+      "IpPermissionsEgress": [],
+      "Tags": [
+        {
+          "Key": "org:team",
+          "Value": "team"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-ea550243621d8f23d",
+      "OwnerId": "111111111111",
+      "GroupName": "default",
+      "Description": "default VPC security group",
+      "IpPermissions": []
+    },
+    {
+      "GroupId": "sg-f0fc5c0853acf649d",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 50000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 135,
+          "ToPort": 135,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 135,
+          "ToPort": 135,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 636,
+          "ToPort": 636,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 53,
+          "ToPort": 53,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.243/32"
+            },
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.242/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 48001,
+          "ToPort": 48002,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 389,
+          "ToPort": 389,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow to SOE for Ldap",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "Allow to SOE for Ldap",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 53,
+          "ToPort": 53,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.242/32"
+            },
+            {
+              "Description": "Allow to SOE for DNS",
+              "CidrIp": "10.20.230.243/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 389,
+          "ToPort": 389,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 3268,
+          "ToPort": 3268,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 88,
+          "ToPort": 88,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 88,
+          "ToPort": 88,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.229.224/27"
+            },
+            {
+              "Description": "For access of SOE Active Directory",
+              "CidrIp": "10.20.230.0/27"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-soe"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-f0fc5c0853acf649d",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-soe",
+      "Description": "XXXX UAT Servers to integrate with SOE Active Directory",
+      "IpPermissions": []
+    },
+    {
+      "GroupId": "sg-f1e22e496da168c30",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 50000,
+          "ToPort": 55000,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to file server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "outbound to gp",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "outbound to un server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.8/32"
+            },
+            {
+              "CidrIp": "10.20.1.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6006,
+          "ToPort": 6006,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.8/32"
+            },
+            {
+              "CidrIp": "10.20.1.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 12221,
+          "ToPort": 12221,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "To Common Forward Proxy",
+              "CidrIp": "10.20.230.227/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4369,
+          "ToPort": 4369,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1098,
+          "ToPort": 1098,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.8/32"
+            },
+            {
+              "CidrIp": "10.20.1.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29079,
+          "ToPort": 29081,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29085,
+          "ToPort": 29090,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "ArcGIS Portal Health Check against public facing URL",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to file Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.2.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 9876,
+          "ToPort": 9876,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to portal",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.8/32"
+            },
+            {
+              "CidrIp": "10.20.1.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 2443,
+          "ToPort": 2443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "to rdsdb",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4000,
+          "ToPort": 4003,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.8/32"
+            },
+            {
+              "CidrIp": "10.20.1.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 27000,
+          "ToPort": 27001,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Job server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6099,
+          "ToPort": 6099,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.8/32"
+            },
+            {
+              "CidrIp": "10.20.1.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "outbound to Portal server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.8/32"
+            },
+            {
+              "CidrIp": "10.20.1.5/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 14333,
+          "ToPort": 14333,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic to UN DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-c6fa82cb28e1fb1f5"
+            },
+            {
+              "Description": "Traffic to ENT DB",
+              "UserId": "111111111111",
+              "GroupId": "sg-50b79733dcf4240a1"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-map-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-f1e22e496da168c30",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-map-01",
+      "Description": "XXXX intranet Map/Feature/Query app Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from UN Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from GP Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from portal Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Allow traffic from app alb sgrp to Map server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "Allow rds db to access the hosting server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            },
+            {
+              "Description": "ArcGIS Server Token generation from web server",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6006,
+          "ToPort": 6006,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from portal Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4000,
+          "ToPort": 4003,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from portal Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6099,
+          "ToPort": 6099,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from UN Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from portal Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from GP Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from portal Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Allow traffic from app alb sgrp to Map server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            },
+            {
+              "Description": "Traffic from GP Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "RQ-20250821-00006324 XXXX Portal to ARCGIS",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from UN Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from portal Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from GP Server to Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-7079bcbb558022f61",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from RDS DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow rds db to access the hosting server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Allow rds db to access access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from RDS DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from RDS DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from RDS DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow rds db to access access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-f92fbfe42f69e5786"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-rdb-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-7079bcbb558022f61",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-rdb-01",
+      "Description": "XXXX intranet relational datastore Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 4369,
+          "ToPort": 4369,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 2443,
+          "ToPort": 2443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Allow Job server to access rds server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29079,
+          "ToPort": 29081,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 29085,
+          "ToPort": 29090,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 9876,
+          "ToPort": 9876,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-1269df882c3567c92",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13724,
+          "ToPort": 13724,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.233/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.234/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.235/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.236/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.237/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.231/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.232/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1556,
+          "ToPort": 1556,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.233/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.234/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.235/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.236/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.237/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.231/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.232/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 9800,
+          "ToPort": 9800,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "RQ-20250929-00006853 outbound to GCCP BaaS+ server",
+              "CidrIp": "10.20.230.216/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 outbound to GCCP BaaS+ server",
+              "CidrIp": "10.20.230.217/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13782,
+          "ToPort": 13782,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.233/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.234/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.235/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.236/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.237/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.231/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.232/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "RQ-20250929-00006853 outbound to GCCP BaaS+ repo",
+              "CidrIp": "10.20.206.0/24"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-baas-backup-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-1269df882c3567c92",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-baas-backup-01",
+      "Description": "XXXX intranet Baas Backup ENI Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13724,
+          "ToPort": 13724,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.232/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.231/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.233/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.234/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.235/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.236/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.237/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 1556,
+          "ToPort": 1556,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.232/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.231/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.233/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.234/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.235/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.236/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.237/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13782,
+          "ToPort": 13782,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.231/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Media Server",
+              "CidrIp": "10.20.230.232/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.233/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.234/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.235/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.236/32"
+            },
+            {
+              "Description": "BaaS-NetBackup Master Server",
+              "CidrIp": "10.20.230.237/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 8600,
+          "ToPort": 8600,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "RQ-20250929-00006853 inbound from GCCP BaaS+ server",
+              "CidrIp": "10.20.230.216/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 inbound from GCCP BaaS+ server",
+              "CidrIp": "10.20.230.217/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.218/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.219/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.220/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.221/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.222/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.223/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.224/32"
+            },
+            {
+              "Description": "RQ-20250929-00006853 GCCP BaaS+ inbound",
+              "CidrIp": "10.20.230.225/32"
+            },
+            {
+              "Description": "BaaS+ inbound [ts]",
+              "CidrIp": "10.20.207.0/24"
+            },
+            {
+              "Description": "BaaS+",
+              "CidrIp": "10.20.206.0/24"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-7650972b67a042a18",
+      "IpPermissionsEgress": [],
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-file-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-7650972b67a042a18",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-file-01",
+      "Description": "XXXX intranet file server Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from ENT DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-50b79733dcf4240a1"
+            },
+            {
+              "Description": "Traffic from RDS DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            },
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-c6fa82cb28e1fb1f5"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from job01 Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-c6fa82cb28e1fb1f5"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from RDS DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            },
+            {
+              "Description": "Traffic from ENT DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-50b79733dcf4240a1"
+            },
+            {
+              "Description": "Traffic from job01 Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-f92fbfe42f69e5786",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 443,
+          "ToPort": 443,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "10.20.1.4/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-appalb-01"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-f92fbfe42f69e5786",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-appalb-01",
+      "Description": "XXXX intranet App alb Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 6443,
+          "ToPort": 6443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow traffic from web server to the app tier load balancer",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Allow un servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Allow rds db to access access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            },
+            {
+              "Description": "Allow portal servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Allow gp servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Allow map servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 13443,
+          "ToPort": 13443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Allow traffic from web server to the app tier load balancer",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Allow un servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Allow gp servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Allow portal servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Allow map servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 7443,
+          "ToPort": 7443,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            },
+            {
+              "Description": "Allow traffic from web server to the app tier load balancer",
+              "UserId": "111111111111",
+              "GroupId": "sg-a14e1807ea7d32a83"
+            },
+            {
+              "Description": "Allow un servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Allow gp servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Allow map servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Allow rds db to access access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-7079bcbb558022f61"
+            },
+            {
+              "Description": "Allow portal servers to access the main FQDN of the services",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-c6fa82cb28e1fb1f5",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "udp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from UN DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "udp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from UN DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 139,
+          "ToPort": 139,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from UN DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        },
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 445,
+          "ToPort": 445,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from UN DB Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-7650972b67a042a18"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "sgrp-XXXX-udb-01"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "environment",
+          "Value": "uat"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "VpcId": "vpc-f4efee4924c32459f",
+      "SecurityGroupArn": "arn:aws:ec2:ap-southeast-1:111111111111:security-group/sg-c6fa82cb28e1fb1f5",
+      "OwnerId": "111111111111",
+      "GroupName": "sgrp-XXXX-udb-01",
+      "Description": "XXXX intranet UN Enterprise DB Security Group",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 14333,
+          "ToPort": 14333,
+          "UserIdGroupPairs": [
+            {
+              "Description": "Traffic from GP Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-703bf2694bdf82ed0"
+            },
+            {
+              "Description": "Traffic from Portal Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-4c9b120c417998692"
+            },
+            {
+              "Description": "Traffic from Map Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-f1e22e496da168c30"
+            },
+            {
+              "Description": "Traffic from UN Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-08b9a430cb789f96c"
+            },
+            {
+              "Description": "Traffic from Job Server",
+              "UserId": "111111111111",
+              "GroupId": "sg-cb5968f5ba1ad50e8"
+            }
+          ],
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    }
+  ]
+}
