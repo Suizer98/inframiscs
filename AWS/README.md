@@ -81,3 +81,17 @@ import boto3
 ```
 
 Typical dependencies should be `boto3`, `botocore`, `jmespath`, `s3transfer`, `dateutil`, `urllib3`, `six`. The env stays untouched; only these scripts see those packages.
+
+## Enabling right clicking on AWS dashboard
+
+To restore right clicking behaviour on AWS dashboard, do:
+
+1. `Ctrl + Shift + I` on keyboard to open Developer Tools on Edge/Chrome.
+
+2. Go to `Console` tab, on terminal type `allow pasting`.
+
+3. Paste below and press enter:
+```JavaScript
+document.addEventListener('contextmenu', e => e.stopPropagation(), true);
+```
+ 
