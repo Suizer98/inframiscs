@@ -94,4 +94,52 @@ To restore right clicking behaviour on AWS dashboard, do:
 ```JavaScript
 document.addEventListener('contextmenu', e => e.stopPropagation(), true);
 ```
+
+## Windows failover cluster names vs EC2 IPs
+
+`describe_instances` does not store the Windows/AD cluster name. It shows each VM node IP (`PrivateIpAddress`, primary) and extra IPs on the same NIC (`PrivateIpAddresses` with `Primary: false`). Those extra IPs are AWS secondary private IPs. AD/DNS `clus*` A records point at one of those extras (the cluster name IP). SQL listener names can have two A records, one extra on each node.
+
+`(on 02)` means that cluster name extra IP is attached on VM 02's NIC, not that 02 is the current AG primary.
+
+On a domain-joined Windows box, AD cluster computer objects (`clus*`) and their DNS A records:
+
+```powershell
+$q = [adsisearcher]"(&(objectCategory=computer)(name=clus*))"
+$q.PageSize = 1000
+$q.PropertiesToLoad.AddRange(@("name","dNSHostName"))
+$q.FindAll() | ForEach-Object {
+  $dns = [string]$_.Properties["dnshostname"][0]
+  $a   = @()
+  if ($dns) {
+    $a = Resolve-DnsName $dns -ErrorAction SilentlyContinue |
+         Where-Object Type -eq A
+  }
+  [pscustomobject]@{
+    Name = [string]$_.Properties["name"][0]
+    DNS  = $dns
+    IP   = ($a.IPAddress | Select-Object -Unique) -join ", "
+  }
+} | Sort-Object Name | Format-Table -AutoSize
+```
+
+Match `IP` to extra addresses in `describe_instances`. Reverse DNS via AmazonProvidedDNS (`169.254.169.253`) only returns `ip-...compute.internal`, not the AD name.
+
+This box's own cluster (Failover Clustering tools):
+
+```powershell
+Get-Cluster
+Get-ClusterResource | Get-ClusterParameter |
+  Where-Object Name -in @("Name", "DnsName", "Address")
+```
+
+Example from `describe_json2` (masked names and `10.30.x` IPs, same layout as the diagram):
+
+| Cluster | DNS | Cluster name IP | Node IPs | Extra IPs (1st VM) | Extra IPs (2nd VM) | Extra IPs (3rd VM) |
+| --- | --- | --- | --- | --- | --- | --- |
+| CLUSXXXXENTDB | clusXXXXentdb.xxxx.example.com | 10.30.1.83 (on 02) | 10.30.1.73 (vm-XXXX-edb-01) / 10.30.1.74 (vm-XXXX-edb-02) | .81, .82 (.82 = XXXXentdb-lis) | .83, .84 (.84 = XXXXentdb-lis) | — |
+| clusXXXXentfs | clusXXXXentfs.xxxx.example.com | 10.30.1.100 (on file-01) | 10.30.1.97 (vm-XXXX-file-01) / 10.30.1.98 (vm-XXXX-file-02) / 10.30.1.99 (vm-XXXX-file-03) | .100 | .101 | .102 |
+| CLUSXXXXUNDB1 | clusXXXXundb1.xxxx.example.com | 10.30.1.93 (on udb-01) | 10.30.1.75 (vm-XXXX-udb-01) / 10.30.1.76 (vm-XXXX-udb-02) | .93, .94 | .95, .96 | — |
+| clusXXXXundb3 | clusXXXXundb3.xxxx.example.com | 10.30.1.85 (on udb-03) | 10.30.1.77 (vm-XXXX-udb-03) / 10.30.1.78 (vm-XXXX-udb-04) | .85, .86 | .87, .88 | — |
+| CLUSXXXXUNDB5 | clusXXXXundb5.xxxx.example.com | 10.30.1.89 (on udb-05) | 10.30.1.79 (vm-XXXX-udb-05) / 10.30.1.80 (vm-XXXX-udb-06) | .89, .90 | .91, .92 | — |
+| clusXXXXjob | clusXXXXjob.xxxx.example.com | (none) | 10.30.1.9 (vm-XXXX-job-01) / 10.30.1.16 (vm-XXXX-job-02) | — | — | — |
  
