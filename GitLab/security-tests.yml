@@ -1,0 +1,79 @@
+spec:
+  inputs:
+    stage:
+      default: test
+---
+include:
+  - template: Jobs/Secret-Detection.gitlab-ci.yml
+  - template: Jobs/Dependency-Scanning.latest.gitlab-ci.yml
+  - template: Security/SAST.gitlab-ci.yml
+
+secret_detection:
+  interruptible: true
+  tags:
+    - docker
+
+semgrep-sast:
+  interruptible: true
+  tags:
+    - docker
+
+brakeman-sast:
+  interruptible: true
+  tags:
+    - docker
+
+flawfinder-sast:
+  interruptible: true
+  allow_failure: true
+  tags:
+    - docker
+
+nodejs-scan-sast:
+  interruptible: true
+  tags:
+    - docker
+
+phpcs-security-audit-sast:
+  interruptible: true
+  tags:
+    - docker
+
+pmd-apex-sast:
+  interruptible: true
+  tags:
+    - docker
+
+sobelow-sast:
+  interruptible: true
+  tags:
+    - docker
+
+spotbugs-sast:
+  interruptible: true
+  tags:
+    - docker
+
+check-dockerignore-for-git-folder:
+  stage: test
+  script:
+    - >
+      if grep -q 'COPY . .' Dockerfile*; then
+        echo "Found 'COPY . .' in Dockerfile";
+        if [ -f .dockerignore ]; then
+          echo ".dockerignore file exists";
+          if grep -q '^.git$' .dockerignore; then
+            echo ".git is excluded in .dockerignore";
+          else
+            echo "Error: .git is not excluded in .dockerignore";
+            exit 1;
+          fi
+        else
+          echo "Error: .dockerignore file does not exist";
+          exit 1;
+        fi
+      else
+        echo "'COPY . .' not found in any Dockerfile";
+      fi
+  tags:
+    - docker

@@ -1,0 +1,12 @@
+spec:
+  inputs:
+    stage:
+      default: cleanup
+---
+prune-unused-docker-images:
+  script:
+    - docker system prune -a -f --filter "until=24h"
+  tags:
+    - shared
+    - docker-shell
+  stage: $[[ inputs.stage ]]
