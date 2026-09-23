@@ -1,0 +1,54 @@
+trigger:
+  - master
+
+pr:
+  - master
+
+pool: DefaultPool
+
+variables:
+  projectName: sample-toolbox
+
+stages:
+  - stage: Toolbox
+    displayName: Toolbox
+    jobs:
+      - job: atbx
+        displayName: Rebuild sample editing toolbox
+        steps:
+          - checkout: self
+
+          - task: DockerCompose@0
+            displayName: Build toolbox image
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: build atbx
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Replace toolbox scripts and zip atbx
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: up --abort-on-container-exit --exit-code-from atbx atbx
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Remove toolbox container
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: down -v --remove-orphans
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+            condition: always()
+
+          - task: PublishBuildArtifacts@1
+            displayName: Publish toolbox artifact
+            inputs:
+              PathtoPublish: '$(Build.SourcesDirectory)/artifacts'
+              ArtifactName: Sample_Editing_Tools
+              publishLocation: Container

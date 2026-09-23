@@ -1,0 +1,13 @@
+{
+    "source_atbx": "Sample_Editing_Tools.atbx",
+    "output_atbx": "artifacts/Sample_Editing_Tools.atbx",
+    "scripts": [
+        "gp/s01.py",
+        "gp/s02.py",
+        "gp/s03.py",
+        "gp/s04.py",
+        "gp/s05.py",
+        "gp/s06.py",
+        "gp/s07.py"
+    ]
+}

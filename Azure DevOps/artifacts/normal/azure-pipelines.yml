@@ -1,0 +1,201 @@
+trigger:
+  - master
+
+pr:
+  - master
+
+pool: DefaultPool
+
+variables:
+  - group: Secret variables
+  - name: projectName
+    value: testkit
+
+stages:
+  - stage: Format
+    displayName: Format
+    jobs:
+      - job: black
+        displayName: Black code linting check
+        steps:
+          - checkout: self
+          - task: DockerCompose@0
+            displayName: Build test container image
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: build --no-cache testkit-base
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Run test container to check code formatting
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: up --abort-on-container-exit testkit-base
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Clean up test container
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: down -v --remove-orphans
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+            condition: always()
+
+  - stage: Test
+    displayName: Test
+    dependsOn: Format
+    condition: succeeded()
+    jobs:
+      - job: test
+        displayName: Test TestKit rules and scripts
+        steps:
+          - checkout: self
+
+          - task: DockerCompose@0
+            displayName: Build test container image
+            env:
+              DOCKER_BUILDKIT: "1"
+              COMPOSE_DOCKER_CLI_BUILD: "1"
+              SECRETS_USERNAME: $(SECRETS_USERNAME)
+              SECRETS_PASSWORD: $(SECRETS_PASSWORD)
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: build --no-cache testkit
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Run test container to run tests
+            env:
+              DOCKER_BUILDKIT: "1"
+              COMPOSE_DOCKER_CLI_BUILD: "1"
+              SECRETS_USERNAME: $(SECRETS_USERNAME)
+              SECRETS_PASSWORD: $(SECRETS_PASSWORD)
+              SQLSERVER_HOST: $(SQLSERVER_HOST)
+              SQLSERVER_PORT: $(SQLSERVER_PORT)
+              SQLSERVER_DATABASE: $(SQLSERVER_DATABASE)
+              SQLSERVER_USER: $(SQLSERVER_USER)
+              SQLSERVER_PASSWORD: $(SQLSERVER_PASSWORD)
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: up --abort-on-container-exit testkit
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Clean up test container
+            env:
+              SECRETS_USERNAME: $(SECRETS_USERNAME)
+              SECRETS_PASSWORD: $(SECRETS_PASSWORD)
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: down -v --remove-orphans testkit
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+            condition: always()
+
+  - stage: Package
+    displayName: Package
+    dependsOn: Test
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
+    variables:
+      packageDateTime: $[ format('{0:yyyyMMddHHmmss}', pipeline.startTime) ]
+    jobs:
+      - job: package
+        displayName: Package release artifact
+        steps:
+          - checkout: self
+            fetchDepth: 0
+
+          - powershell: |
+              docker image inspect esrisg/testkit:latest | Out-Null
+              if ($LASTEXITCODE -ne 0) {
+                Write-Error "Image esrisg/testkit:latest not found. Run the Test stage on this agent first (same pool agent must retain Docker images)."
+                exit 1
+              }
+              Write-Host "Reusing esrisg/testkit:latest from Test stage"
+            displayName: Verify testkit image exists
+
+          - task: DockerCompose@0
+            displayName: Run packages container to download dependencies
+            env:
+              SECRETS_USERNAME: $(SECRETS_USERNAME)
+              SECRETS_PASSWORD: $(SECRETS_PASSWORD)
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: up --abort-on-container-exit packages
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Clean up packages container
+            env:
+              SECRETS_USERNAME: $(SECRETS_USERNAME)
+              SECRETS_PASSWORD: $(SECRETS_PASSWORD)
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/docker-compose.yml
+              dockerComposeCommand: down -v --remove-orphans packages
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+            condition: always()
+
+          - powershell: |
+              $packagesDir = Join-Path "$(Build.SourcesDirectory)" "packages"
+              $wheelCount = @(Get-ChildItem -Path $packagesDir -Recurse -File -ErrorAction SilentlyContinue).Count
+              if ($wheelCount -eq 0) {
+                Write-Error "packages/ is missing or empty after the packages container run."
+                exit 1
+              }
+              Write-Host "Found $wheelCount file(s) in packages/"
+            displayName: Verify packages folder
+
+          - powershell: |
+              $zipName = "testkit_$(packageDateTime).zip"
+              $zipPath = Join-Path "$(Build.ArtifactStagingDirectory)" $zipName
+              $staging = Join-Path "$(Build.ArtifactStagingDirectory)" "package-root"
+              $tempZip = Join-Path "$(Build.ArtifactStagingDirectory)" "archive-temp.zip"
+              $packagesDir = Join-Path "$(Build.SourcesDirectory)" "packages"
+              $repoRoot = "$(Build.SourcesDirectory)"
+
+              if (Test-Path $staging) { Remove-Item $staging -Recurse -Force }
+              New-Item -ItemType Directory -Path $staging | Out-Null
+
+              Push-Location $repoRoot
+              git archive --format=zip --output=$tempZip HEAD hadoop-3.3.6 src rules readme.md sample.env
+              Pop-Location
+
+              Expand-Archive -Path $tempZip -DestinationPath $staging -Force
+              Remove-Item $tempZip -Force
+              Copy-Item -Path $packagesDir -Destination (Join-Path $staging "packages") -Recurse -Force
+
+              if (Test-Path $zipPath) { Remove-Item $zipPath -Force }
+              Compress-Archive -Path (Join-Path $staging "*") -DestinationPath $zipPath -CompressionLevel Optimal
+              Remove-Item $staging -Recurse -Force
+
+              if (-not (Test-Path $zipPath)) {
+                Write-Error "Failed to create package: $zipPath"
+                exit 1
+              }
+
+              $sizeMb = [math]::Round((Get-Item $zipPath).Length / 1MB, 2)
+              Write-Host "Created $zipName ($sizeMb MB) including packages/"
+              Write-Host "##vso[task.setvariable variable=packageZipName]$zipName"
+            displayName: Create testkit zip
+
+          - task: PublishBuildArtifacts@1
+            displayName: Publish package artifact
+            inputs:
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(packageZipName)'
+              ArtifactName: testkit
+              publishLocation: Container

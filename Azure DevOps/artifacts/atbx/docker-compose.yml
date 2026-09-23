@@ -1,0 +1,16 @@
+services:
+  sample-toolbox:
+    build: .
+    image: example/sample-toolbox:latest
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: black --check .
+
+  atbx:
+    build: .
+    image: example/sample-toolbox:latest
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: python3 update_atbx.py
