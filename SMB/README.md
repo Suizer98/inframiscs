@@ -6,6 +6,7 @@ Scripts (run elevated on the target server):
 
 - `setup_window_samba.ps1` — folders, SMB share, NTFS ACLs
 - `setup_IIS.ps1` — IIS site, Windows Auth, firewall, HTTP smoke test
+- `web.config` — sample folder config (directory browse + `.atbx` MIME)
 
 ---
 
@@ -182,6 +183,17 @@ Get-Service W3SVC, WAS
 Get-WebAppPoolState -Name "ArtifactsPool"
 ```
 
+Copy `web.config` into the physical folder IIS serves for that URL (for example `C:\Artifacts\Releases\data\` for `http://100.16.xx.101:8000/Releases/data/`). Directory browse alone does not register unknown extensions; without a MIME map, listing can return `200` while GET/HEAD on the file returns `404`.
+
+```powershell
+Copy-Item -Path "\\path\to\repo\SMB\web.config" `
+  -Destination "C:\Artifacts\Releases\data\web.config" -Force
+```
+
+Parent site settings can override a child `web.config`. If IIS reports a duplicate MIME type, add `.atbx` once at the site level in IIS Manager, or drop the `<remove>` line. In Request Filtering → File Name Extensions, ensure `.atbx` is not denied.
+
+Optional: enable Anonymous Authentication on that app and add authorization if downloads should work without a Windows login (match another Releases subfolder that already allows anonymous). `<allow users="*" />` in `web.config` only helps when Anonymous Auth is enabled in IIS.
+
 ---
 
 ## 6. Browser access
@@ -192,9 +204,49 @@ Browsers may return `401` on first visit (IP treated as Internet zone) — not a
 
 Users still need NTFS read on `C:\Artifacts`.
 
+HTTP links and `Invoke-WebRequest` without credentials return `401` when the site uses Windows Authentication only. That is authentication, not a missing file on the share. SMB `\\100.16.xx.101\Artifacts\...` remains a reliable fallback when IIS auth or MIME is misaligned.
+
 ---
 
-## 7. Troubleshooting — download 404 when filename contains `+`
+## 7. Troubleshooting — HTTP 401 vs 404 on a file URL
+
+Use the same URL with and without credentials to see whether the problem is auth or IIS static content.
+
+```powershell
+$url = "http://100.16.xx.101:8000/Releases/data/Sample_Tool_2026_09_23.atbx"
+
+Invoke-WebRequest -Uri $url -Method Head -UseBasicParsing
+# Often 401 when Windows Auth is required and no credentials were sent
+
+Invoke-WebRequest -Uri $url -Method Head -UseDefaultCredentials -UseBasicParsing
+# 200 = file is served; 404 with creds = extension/MIME or request filtering, not missing on disk
+```
+
+Typical pattern:
+
+
+| Request | Result | Meaning |
+| ------- | ------ | ------- |
+| No credentials | `401 Unauthorized` | Site expects Windows (or anonymous is off) |
+| `-UseDefaultCredentials`, folder URL | `200`, file visible in listing | Share path is fine; browse works |
+| `-UseDefaultCredentials`, direct file GET/HEAD | `404` | Register MIME for the extension (e.g. `.atbx` → `application/octet-stream`) |
+| SMB UNC | File present | Not a copy/release path issue |
+
+
+After updating `web.config` (or IIS MIME Types), retry download:
+
+```powershell
+Invoke-WebRequest -Uri $url -UseDefaultCredentials -UseBasicParsing `
+  -OutFile "$env:TEMP\test.atbx"
+```
+
+Workaround without IIS change: publish a `.zip` copy of the same bytes in the release task and rename to `.atbx` after download.
+
+For release notes: `401` = need signed-in browser session or Anonymous on that path; `404` on the file with `200` on the folder listing = add MIME (or ship `.zip`). SMB path does not require IIS changes.
+
+---
+
+## 8. Troubleshooting — download 404 when filename contains `+`
 
 If the file exists on disk and SMB can open it, but HTTP returns a generic 404, IIS request filtering is often rejecting `+` as a double-escape sequence (`404.11`). Remote browsers only show a plain 404; the substatus is visible from the server:
 
@@ -238,7 +290,7 @@ Get-ChildItem "C:\Artifacts\Packages" -Filter "*+*" -Recurse |
 
 ---
 
-## 8. Sample CI/CD — copy to SMB with powershell task on ADO server
+## 9. Sample CI/CD — copy to SMB with powershell task on ADO server
 
 Map the share, copy the package, then clean up the drive (avoids multiple-credential SMB errors):
 
