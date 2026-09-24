@@ -1,0 +1,1140 @@
+{
+  "Images": [
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": false,
+            "SnapshotId": "snap-a37ac38a4b59c8131",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "vm-XXXX-ptl-01_beforeinterfacesettings_23102025",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "vm-XXXX-ptl-01_beforeinterfacesettings_23102025",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-259663a51d7130462",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-0b2a30c1b715279c6",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-383ddd847fad61a6e",
+      "ImageLocation": "111111111111/vm-XXXX-ptl-01_beforeinterfacesettings_23102025",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2025-10-23T13:15:46.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    },
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": false,
+            "SnapshotId": "snap-5bffaf12e73e0683f",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "vm-XXXX-ptl-01_before_restoration",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "vm-XXXX-ptl-01_before_restoration",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-259663a51d7130462",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-0b2a30c1b715279c6",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-d4ef243fc588f0cd8",
+      "ImageLocation": "111111111111/vm-XXXX-ptl-01_before_restoration",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2025-10-27T04:19:05.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    },
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": false,
+            "SnapshotId": "snap-e70be5fe96f8aca3a",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "vm-XXXX-proxy-01_goodstate_28112025",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "vm-XXXX-proxy-01_goodstate_28112025",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-5569c2f659cf0f69a",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-8139b511d00aad49f",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-597e19a53dfbc4647",
+      "ImageLocation": "111111111111/vm-XXXX-proxy-01_goodstate_28112025",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2025-11-28T11:38:03.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    },
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": false,
+            "SnapshotId": "snap-b6356c0b9311e5180",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "vm-XXXX-proxy-01_beforedriverupgrade",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "vm-XXXX-proxy-01_beforedriverupgrade",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-5569c2f659cf0f69a",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-8139b511d00aad49f",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-715cc2966dead7029",
+      "ImageLocation": "111111111111/vm-XXXX-proxy-01_beforedriverupgrade",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2026-01-23T04:55:39.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    },
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": false,
+            "SnapshotId": "snap-5a55c7d8fcd8cbe1f",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "vm-XXXX-ptl-01_afterdomainfix_23102025",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "vm-XXXX-ptl-01_afterdomainfix_23102025",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-259663a51d7130462",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-0b2a30c1b715279c6",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-3d13ab500e86b7f72",
+      "ImageLocation": "111111111111/vm-XXXX-ptl-01_afterdomainfix_23102025",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2025-10-23T15:25:07.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    },
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "SnapshotId": "snap-89f04dff96aa07bbb",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "vm-XXXX-ptl-01_beforetroubleshooting_23102025",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "vm-XXXX-ptl-01_beforetroubleshooting_23102025",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-259663a51d7130462",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-0b2a30c1b715279c6",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-9cdce3b99b4f17937",
+      "ImageLocation": "111111111111/vm-XXXX-ptl-01_beforetroubleshooting_23102025",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2025-10-23T07:33:24.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    },
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "SnapshotId": "snap-8f96e4e46cd7a234f",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "09c8897c6e343e821_before_commvault_driver_update_10022026",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "i-09c8897c6e343e821_before_commvault_driver_update_10022026",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-259663a51d7130462",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-0b2a30c1b715279c6",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-733108c93d55f6c36",
+      "ImageLocation": "111111111111/i-09c8897c6e343e821_before_commvault_driver_update_10022026",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2026-02-10T06:25:20.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    },
+    {
+      "PlatformDetails": "Windows",
+      "UsageOperation": "RunInstances:0002",
+      "BlockDeviceMappings": [
+        {
+          "Ebs": {
+            "DeleteOnTermination": false,
+            "SnapshotId": "snap-aa5dc9c16d718b214",
+            "VolumeSize": 100,
+            "VolumeType": "gp2",
+            "Encrypted": true
+          },
+          "DeviceName": "/dev/sda1"
+        },
+        {
+          "DeviceName": "xvdca",
+          "VirtualName": "ephemeral0"
+        },
+        {
+          "DeviceName": "xvdcb",
+          "VirtualName": "ephemeral1"
+        },
+        {
+          "DeviceName": "xvdcc",
+          "VirtualName": "ephemeral2"
+        },
+        {
+          "DeviceName": "xvdcd",
+          "VirtualName": "ephemeral3"
+        },
+        {
+          "DeviceName": "xvdce",
+          "VirtualName": "ephemeral4"
+        },
+        {
+          "DeviceName": "xvdcf",
+          "VirtualName": "ephemeral5"
+        },
+        {
+          "DeviceName": "xvdcg",
+          "VirtualName": "ephemeral6"
+        },
+        {
+          "DeviceName": "xvdch",
+          "VirtualName": "ephemeral7"
+        },
+        {
+          "DeviceName": "xvdci",
+          "VirtualName": "ephemeral8"
+        },
+        {
+          "DeviceName": "xvdcj",
+          "VirtualName": "ephemeral9"
+        },
+        {
+          "DeviceName": "xvdck",
+          "VirtualName": "ephemeral10"
+        },
+        {
+          "DeviceName": "xvdcl",
+          "VirtualName": "ephemeral11"
+        },
+        {
+          "DeviceName": "xvdcm",
+          "VirtualName": "ephemeral12"
+        },
+        {
+          "DeviceName": "xvdcn",
+          "VirtualName": "ephemeral13"
+        },
+        {
+          "DeviceName": "xvdco",
+          "VirtualName": "ephemeral14"
+        },
+        {
+          "DeviceName": "xvdcp",
+          "VirtualName": "ephemeral15"
+        },
+        {
+          "DeviceName": "xvdcq",
+          "VirtualName": "ephemeral16"
+        },
+        {
+          "DeviceName": "xvdcr",
+          "VirtualName": "ephemeral17"
+        },
+        {
+          "DeviceName": "xvdcs",
+          "VirtualName": "ephemeral18"
+        },
+        {
+          "DeviceName": "xvdct",
+          "VirtualName": "ephemeral19"
+        },
+        {
+          "DeviceName": "xvdcu",
+          "VirtualName": "ephemeral20"
+        },
+        {
+          "DeviceName": "xvdcv",
+          "VirtualName": "ephemeral21"
+        },
+        {
+          "DeviceName": "xvdcw",
+          "VirtualName": "ephemeral22"
+        },
+        {
+          "DeviceName": "xvdcx",
+          "VirtualName": "ephemeral23"
+        },
+        {
+          "DeviceName": "xvdcy",
+          "VirtualName": "ephemeral24"
+        },
+        {
+          "DeviceName": "xvdcz",
+          "VirtualName": "ephemeral25"
+        }
+      ],
+      "Description": "i-b367b9e20c6693abd (vm-XXXX-job-01)_Backup",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "Name": "i-b367b9e20c6693abd (vm-XXXX-job-01)_Backup",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "SourceInstanceId": "i-b367b9e20c6693abd",
+      "DeregistrationProtection": "disabled",
+      "SourceImageId": "ami-0b2a30c1b715279c6",
+      "SourceImageRegion": "ap-southeast-1",
+      "FreeTierEligible": true,
+      "ImageId": "ami-abe2090f917c64ea9",
+      "ImageLocation": "111111111111/i-b367b9e20c6693abd (vm-XXXX-job-01)_Backup",
+      "State": "available",
+      "OwnerId": "111111111111",
+      "CreationDate": "2025-07-10T04:22:03.000Z",
+      "Public": false,
+      "Architecture": "x86_64",
+      "ImageType": "machine",
+      "Platform": "windows"
+    }
+  ]
+}

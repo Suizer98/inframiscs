@@ -1,0 +1,154 @@
+{
+  "Vpcs": [
+    {
+      "OwnerId": "444444444444",
+      "InstanceTenancy": "default",
+      "CidrBlockAssociationSet": [
+        {
+          "AssociationId": "vpc-cidr-assoc-8a0675080f297e44d",
+          "CidrBlock": "10.30.226.64/26",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-a665aba472d12e209",
+          "CidrBlock": "10.30.227.0/26",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-5680c9269e7860cc4",
+          "CidrBlock": "10.30.223.0/25",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-02256b1992557c08d",
+          "CidrBlock": "10.30.229.0/26",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-0a79452b71e741789",
+          "CidrBlock": "10.30.223.128/25",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        }
+      ],
+      "IsDefault": false,
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "VpcId": "vpc-b547d92234d892038",
+      "State": "available",
+      "CidrBlock": "10.30.226.64/26",
+      "DhcpOptionsId": "default"
+    },
+    {
+      "OwnerId": "222222222222",
+      "InstanceTenancy": "default",
+      "CidrBlockAssociationSet": [
+        {
+          "AssociationId": "vpc-cidr-assoc-6ea522400007ddb4e",
+          "CidrBlock": "10.30.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-0adac0b620612e6c7",
+          "CidrBlock": "10.30.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-187dd75c887d437ec",
+          "CidrBlock": "10.30.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-4fb1120506c608849",
+          "CidrBlock": "10.30.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-2915eceb841c33eae",
+          "CidrBlock": "10.30.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-5216d82ac4d60e4f1",
+          "CidrBlock": "10.30.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-a83d57368959d6910",
+          "CidrBlock": "10.30.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        }
+      ],
+      "IsDefault": false,
+      "Tags": [
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "cmp_cidr",
+          "Value": "/25"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        }
+      ],
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "State": "available",
+      "CidrBlock": "10.30.0.0/16",
+      "DhcpOptionsId": "default"
+    }
+  ]
+}

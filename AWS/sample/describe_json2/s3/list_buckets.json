@@ -1,0 +1,32 @@
+{
+  "Buckets": [
+    {
+      "Name": "sst-s3-XXXX-prd-alb-logs",
+      "CreationDate": "2026-04-23T21:06:06+00:00",
+      "BucketArn": "arn:aws:s3:::sst-s3-XXXX-prd-alb-logs"
+    },
+    {
+      "Name": "sst-s3-XXXX-prd-ct-logs01",
+      "CreationDate": "2026-04-23T20:49:17+00:00",
+      "BucketArn": "arn:aws:s3:::sst-s3-XXXX-prd-ct-logs01"
+    },
+    {
+      "Name": "sst-s3-XXXX-prd-s3-access-logs",
+      "CreationDate": "2026-04-23T23:20:28+00:00",
+      "BucketArn": "arn:aws:s3:::sst-s3-XXXX-prd-s3-access-logs"
+    },
+    {
+      "Name": "sst-s3-XXXX-prd-share",
+      "CreationDate": "2026-04-23T20:57:11+00:00",
+      "BucketArn": "arn:aws:s3:::sst-s3-XXXX-prd-share"
+    },
+    {
+      "Name": "sst-s3-XXXX-prd-terraform-backend-store",
+      "CreationDate": "2026-04-23T18:15:00+00:00",
+      "BucketArn": "arn:aws:s3:::sst-s3-XXXX-prd-terraform-backend-store"
+    }
+  ],
+  "Owner": {
+    "ID": "62cd100b8e8d9c48502334eeb738df7faf4b6ea9f64a9e3c619424522512b5a0"
+  }
+}

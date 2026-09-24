@@ -1,0 +1,50 @@
+{
+  "DhcpOptions": [
+    {
+      "OwnerId": "222222222222",
+      "Tags": [],
+      "DhcpOptionsId": "dopt-f9439a45f038089a1",
+      "DhcpConfigurations": [
+        {
+          "Key": "domain-name",
+          "Values": [
+            {
+              "Value": "ap-southeast-1.compute.internal"
+            }
+          ]
+        },
+        {
+          "Key": "domain-name-servers",
+          "Values": [
+            {
+              "Value": "AmazonProvidedDNS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "OwnerId": "222222222222",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "xxxx.example.com"
+        }
+      ],
+      "DhcpOptionsId": "dopt-fc588d041afd47f2d",
+      "DhcpConfigurations": [
+        {
+          "Key": "netbios-name-servers",
+          "Values": [
+            {
+              "Value": "10.30.231.231"
+            },
+            {
+              "Value": "10.30.231.232"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

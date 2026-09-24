@@ -1,0 +1,2586 @@
+{
+  "NetworkAcls": [
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-4152a918e549b6b42",
+          "NetworkAclId": "acl-5a8d697760ea853d6",
+          "SubnetId": "subnet-c6a8b5620638890eb"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 111
+        },
+        {
+          "CidrBlock": "10.30.231.96/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 25,
+            "To": 25
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 150
+        },
+        {
+          "CidrBlock": "10.30.231.96/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 12221,
+            "To": 12221
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 151
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 443,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 221
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 222
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 223
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 255
+        },
+        {
+          "CidrBlock": "10.30.230.224/27",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 500
+        },
+        {
+          "CidrBlock": "10.30.231.0/27",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 501
+        },
+        {
+          "CidrBlock": "10.30.231.248/32",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 502
+        },
+        {
+          "CidrBlock": "10.30.231.249/32",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 503
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": true,
+          "PortRange": {
+            "From": 8834,
+            "To": 8834
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 8530,
+            "To": 8531
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 101
+        },
+        {
+          "CidrBlock": "10.30.231.96/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 150
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 202
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 205
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 240
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 241
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 253
+        },
+        {
+          "CidrBlock": "10.30.230.224/27",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 500
+        },
+        {
+          "CidrBlock": "10.30.231.0/27",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 501
+        },
+        {
+          "CidrBlock": "10.30.231.248/32",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 502
+        },
+        {
+          "CidrBlock": "10.30.231.249/32",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 503
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": false,
+      "NetworkAclId": "acl-5a8d697760ea853d6",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "nacl-XXXX-prd-app-01"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "Allow access to XXXX Intranets App"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Alias",
+          "Value": "NA"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "OwnerId": "222222222222"
+    },
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-7921f1733273fb441",
+          "NetworkAclId": "acl-ef9899653a4e0d2e3",
+          "SubnetId": "subnet-b29961b3b167b8e03"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 202
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 88,
+            "To": 88
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 253
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 135,
+            "To": 135
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 254
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 389,
+            "To": 389
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 255
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 256
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 257
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 202
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 88,
+            "To": 88
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 253
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 135,
+            "To": 135
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 254
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 389,
+            "To": 389
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 255
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 256
+        },
+        {
+          "CidrBlock": "10.30.1.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 257
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": false,
+      "NetworkAclId": "acl-ef9899653a4e0d2e3",
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Alias",
+          "Value": "NA"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "Allow access to XXXX Intranets FSx"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "nacl-XXXX-prd-fsx-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "OwnerId": "222222222222"
+    },
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-aaf6787538828cd55",
+          "NetworkAclId": "acl-bfcc02e800a25c319",
+          "SubnetId": "subnet-5f374bdf86f452001"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 111
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 210
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 445
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 211
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 212
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 88,
+            "To": 88
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 253
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 135,
+            "To": 135
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 254
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 389,
+            "To": 389
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 255
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 256
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 257
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": true,
+          "PortRange": {
+            "From": 8834,
+            "To": 8834
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 8530,
+            "To": 8531
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 101
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 202
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 53,
+            "To": 53
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 88,
+            "To": 88
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 253
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 135,
+            "To": 135
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 254
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 389,
+            "To": 389
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 255
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 256
+        },
+        {
+          "CidrBlock": "10.30.231.64/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 257
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": false,
+      "NetworkAclId": "acl-bfcc02e800a25c319",
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "nacl-XXXX-prd-db-01"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "Allow access to XXXX Intranets DB"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Alias",
+          "Value": "NA"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "OwnerId": "222222222222"
+    },
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-17a4ffaec318f64a4",
+          "NetworkAclId": "acl-2ac6e28dc603667e0",
+          "SubnetId": "subnet-17fd7ca6d3adb3b4a"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "10.30.221.128/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.218.0/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.212.0/24",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 130
+        },
+        {
+          "CidrBlock": "10.30.218.128/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 140
+        },
+        {
+          "CidrBlock": "10.30.0.0/16",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 150
+        },
+        {
+          "CidrBlock": "10.30.207.0/24",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 160
+        },
+        {
+          "CidrBlock": "10.30.217.0/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 180
+        },
+        {
+          "CidrBlock": "10.30.220.128/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 190
+        },
+        {
+          "CidrBlock": "10.30.217.128/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.221.0/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 210
+        },
+        {
+          "CidrBlock": "10.30.227.192/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 220
+        },
+        {
+          "CidrBlock": "10.30.228.0/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 230
+        },
+        {
+          "CidrBlock": "10.30.227.128/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 240
+        },
+        {
+          "CidrBlock": "10.30.228.64/26",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 250
+        },
+        {
+          "CidrBlock": "10.30.222.0/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 260
+        },
+        {
+          "CidrBlock": "10.30.219.0/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 280
+        },
+        {
+          "CidrBlock": "10.30.224.0/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 290
+        },
+        {
+          "CidrBlock": "10.30.224.128/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 300
+        },
+        {
+          "CidrBlock": "10.30.219.128/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 310
+        },
+        {
+          "CidrBlock": "10.30.214.0/24",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 320
+        },
+        {
+          "CidrBlock": "10.30.204.0/23",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 330
+        },
+        {
+          "CidrBlock": "10.30.225.0/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 340
+        },
+        {
+          "CidrBlock": "10.30.225.128/25",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 350
+        },
+        {
+          "CidrBlock": "10.30.213.0/24",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 360
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "10.30.221.128/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.218.0/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.212.0/24",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 130
+        },
+        {
+          "CidrBlock": "10.30.218.128/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 140
+        },
+        {
+          "CidrBlock": "10.30.0.0/16",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 150
+        },
+        {
+          "CidrBlock": "10.30.207.0/24",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 160
+        },
+        {
+          "CidrBlock": "10.30.217.0/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 180
+        },
+        {
+          "CidrBlock": "10.30.220.128/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 190
+        },
+        {
+          "CidrBlock": "10.30.217.128/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.221.0/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 210
+        },
+        {
+          "CidrBlock": "10.30.227.192/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 220
+        },
+        {
+          "CidrBlock": "10.30.228.0/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 230
+        },
+        {
+          "CidrBlock": "10.30.227.128/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 240
+        },
+        {
+          "CidrBlock": "10.30.228.64/26",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 250
+        },
+        {
+          "CidrBlock": "10.30.222.0/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 260
+        },
+        {
+          "CidrBlock": "10.30.219.0/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 280
+        },
+        {
+          "CidrBlock": "10.30.224.0/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 290
+        },
+        {
+          "CidrBlock": "10.30.224.128/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 300
+        },
+        {
+          "CidrBlock": "10.30.219.128/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 310
+        },
+        {
+          "CidrBlock": "10.30.214.0/24",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 320
+        },
+        {
+          "CidrBlock": "10.30.204.0/23",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 330
+        },
+        {
+          "CidrBlock": "10.30.225.0/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 340
+        },
+        {
+          "CidrBlock": "10.30.225.128/25",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 350
+        },
+        {
+          "CidrBlock": "10.30.213.0/24",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 360
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": false,
+      "NetworkAclId": "acl-2ac6e28dc603667e0",
+      "Tags": [],
+      "VpcId": "vpc-b547d92234d892038",
+      "OwnerId": "444444444444"
+    },
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-bdd6c3638dee27d75",
+          "NetworkAclId": "acl-0ba476918e772e336",
+          "SubnetId": "subnet-0808fe64ad8df72af"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-f6f42c491a2180ff4",
+          "NetworkAclId": "acl-0ba476918e772e336",
+          "SubnetId": "subnet-6d5e831e7c6c0a67d"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-57d753a5e22e62569",
+          "NetworkAclId": "acl-0ba476918e772e336",
+          "SubnetId": "subnet-1f5ca9886435a668a"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "Egress": true,
+          "Ipv6CidrBlock": "::/0",
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 101
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "Egress": false,
+          "Ipv6CidrBlock": "::/0",
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 101
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": false,
+      "NetworkAclId": "acl-0ba476918e772e336",
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-private"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        }
+      ],
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "OwnerId": "222222222222"
+    },
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-ab8a9d16836d17897",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-44a970d2fcad11c52"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-5d3d429a18a856d1f",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-25b9c21b80a9b9f27"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-0148e1ca3b7d29d28",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-2c5bada9165c81025"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-8fabe80dd26909145",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-e8807a81595f8c083"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-45230cc287827e28c",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-027dbf71f4465e9bd"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-4b45e1c5e7a419013",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-fb380cbad4d30e903"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-94e453ab6c5bafaf4",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-6e22715e32beb47d5"
+        },
+        {
+          "NetworkAclAssociationId": "aclassoc-a0e2aea45a2543b2a",
+          "NetworkAclId": "acl-a3d192445bcd76978",
+          "SubnetId": "subnet-483d07e22d85972f1"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": true,
+      "NetworkAclId": "acl-a3d192445bcd76978",
+      "Tags": [],
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "OwnerId": "222222222222"
+    },
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-bef9d8be5677f2080",
+          "NetworkAclId": "acl-20b5d0fa66552c131",
+          "SubnetId": "subnet-2c1af4eaa890788df"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.231.112/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 150
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 27000,
+            "To": 27001
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 139
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 250
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 139
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 253
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 254
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": true,
+          "PortRange": {
+            "From": 8834,
+            "To": 8834
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 8530,
+            "To": 8531
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 101
+        },
+        {
+          "CidrBlock": "10.30.231.112/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 150
+        },
+        {
+          "CidrBlock": "10.30.231.112/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 27000,
+            "To": 27001
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 151
+        },
+        {
+          "CidrBlock": "10.30.1.32/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 250
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 252
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": false,
+      "NetworkAclId": "acl-20b5d0fa66552c131",
+      "Tags": [
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Name",
+          "Value": "nacl-XXXX-prd-proxy-01"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Alias",
+          "Value": "NA"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "Allow access to XXXX Intranets Webproxy"
+        }
+      ],
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "OwnerId": "222222222222"
+    },
+    {
+      "Associations": [
+        {
+          "NetworkAclAssociationId": "aclassoc-6fb1577cc15ceaf92",
+          "NetworkAclId": "acl-e14cb921fe1ca9577",
+          "SubnetId": "subnet-d244fcb94b2a9cae2"
+        }
+      ],
+      "Entries": [
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 53,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.2.128/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 139
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 139,
+            "To": 139
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 202
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 203
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 445,
+            "To": 445
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 204
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 205
+        },
+        {
+          "CidrBlock": "10.30.231.96/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 12221,
+            "To": 12221
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 320
+        },
+        {
+          "CidrBlock": "10.30.230.224/27",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 500
+        },
+        {
+          "CidrBlock": "10.30.231.0/27",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 501
+        },
+        {
+          "CidrBlock": "10.30.231.248/32",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 502
+        },
+        {
+          "CidrBlock": "10.30.231.249/32",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 503
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": true,
+          "PortRange": {
+            "From": 8834,
+            "To": 8834
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": true,
+          "PortRange": {
+            "From": 8530,
+            "To": 8531
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": true,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": true,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 100
+        },
+        {
+          "CidrBlock": "10.30.231.80/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "17",
+          "RuleAction": "allow",
+          "RuleNumber": 110
+        },
+        {
+          "CidrBlock": "10.30.2.128/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 200
+        },
+        {
+          "CidrBlock": "10.30.2.128/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 27000,
+            "To": 27001
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 201
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 443,
+            "To": 443
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 250
+        },
+        {
+          "CidrBlock": "10.30.1.0/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 251
+        },
+        {
+          "CidrBlock": "10.30.231.96/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 450
+        },
+        {
+          "CidrBlock": "10.30.230.224/27",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 500
+        },
+        {
+          "CidrBlock": "10.30.231.0/27",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 501
+        },
+        {
+          "CidrBlock": "10.30.231.248/32",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 502
+        },
+        {
+          "CidrBlock": "10.30.231.249/32",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "allow",
+          "RuleNumber": 503
+        },
+        {
+          "CidrBlock": "10.30.231.230/32",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 700
+        },
+        {
+          "CidrBlock": "10.30.231.192/28",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 800
+        },
+        {
+          "CidrBlock": "10.30.231.32/27",
+          "Egress": false,
+          "PortRange": {
+            "From": 1024,
+            "To": 65535
+          },
+          "Protocol": "6",
+          "RuleAction": "allow",
+          "RuleNumber": 1000
+        },
+        {
+          "CidrBlock": "0.0.0.0/0",
+          "Egress": false,
+          "Protocol": "-1",
+          "RuleAction": "deny",
+          "RuleNumber": 32767
+        }
+      ],
+      "IsDefault": false,
+      "NetworkAclId": "acl-e14cb921fe1ca9577",
+      "Tags": [
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Alias",
+          "Value": "NA"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Name",
+          "Value": "nacl-XXXX-prd-web-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "Allow access to XXXX Intranets Web"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "OwnerId": "222222222222"
+    }
+  ]
+}

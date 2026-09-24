@@ -1,0 +1,1006 @@
+{
+  "Subnets": [
+    {
+      "AvailabilityZoneId": "apse1-az3",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-gateway-ap-southeast-1c"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-0808fe64ad8df72af",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-0808fe64ad8df72af",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.231.160/28",
+      "AvailableIpAddressCount": 9,
+      "AvailabilityZone": "ap-southeast-1c",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "XXXX Intranet webproxy subnet"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "sub-XXXX-webproxy-01"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-2c1af4eaa890788df",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-2c1af4eaa890788df",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.2.128/28",
+      "AvailableIpAddressCount": 9,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az2",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "444444444444",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:444444444444:subnet/subnet-17fd7ca6d3adb3b4a",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-17fd7ca6d3adb3b4a",
+      "State": "available",
+      "VpcId": "vpc-b547d92234d892038",
+      "CidrBlock": "10.30.231.32/27",
+      "AvailableIpAddressCount": 13,
+      "AvailabilityZone": "ap-southeast-1a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az2",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-backup-ap-southeast-11b"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-44a970d2fcad11c52",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-44a970d2fcad11c52",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.230.96/27",
+      "AvailableIpAddressCount": 27,
+      "AvailabilityZone": "ap-southeast-11b",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-management-ap-southeast-11a"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-fb380cbad4d30e903",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-fb380cbad4d30e903",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.229.192/27",
+      "AvailableIpAddressCount": 0,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az2",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-management-ap-southeast-11b"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-25b9c21b80a9b9f27",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-25b9c21b80a9b9f27",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.229.224/27",
+      "AvailableIpAddressCount": 27,
+      "AvailabilityZone": "ap-southeast-11b",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-gateway-ap-southeast-1b"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-1f5ca9886435a668a",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-1f5ca9886435a668a",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.231.144/28",
+      "AvailableIpAddressCount": 9,
+      "AvailabilityZone": "ap-southeast-1b",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-backup-ap-southeast-11a"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-e8807a81595f8c083",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-e8807a81595f8c083",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.230.64/27",
+      "AvailableIpAddressCount": 0,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Name",
+          "Value": "sub-XXXX-db-01"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "XXXX Intranet DB Subnet"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-5f374bdf86f452001",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-5f374bdf86f452001",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.1.64/26",
+      "AvailableIpAddressCount": 27,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az2",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cidr_request_uuid",
+          "Value": "d141620d32556a86128-edd65acd899a780a10c"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-backup-ap-southeast-11b-additional"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-483d07e22d85972f1",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-483d07e22d85972f1",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.230.32/27",
+      "AvailableIpAddressCount": 27,
+      "AvailabilityZone": "ap-southeast-11b",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cidr_request_uuid",
+          "Value": "d141620d32556a86128-edd65acd899a780a10c"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-backup-ap-southeast-11a-additional"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-6e22715e32beb47d5",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-6e22715e32beb47d5",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.230.0/27",
+      "AvailableIpAddressCount": 24,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "XXXX Intranet Web Subnet"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "sub-XXXX-web-01"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-d244fcb94b2a9cae2",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-d244fcb94b2a9cae2",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.1.32/28",
+      "AvailableIpAddressCount": 7,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az2",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "FSx subnet"
+        },
+        {
+          "Key": "Name",
+          "Value": "sub-az1a-XXXX-prd-fsx-01"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-b29961b3b167b8e03",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-b29961b3b167b8e03",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.231.64/28",
+      "AvailableIpAddressCount": 3,
+      "AvailabilityZone": "ap-southeast-1a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-management-ap-southeast-11a-additional"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cidr_request_uuid",
+          "Value": "d141620d32556a86128-08e9af44c5b93fd0b5a"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-2c5bada9165c81025",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-2c5bada9165c81025",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.229.128/27",
+      "AvailableIpAddressCount": 24,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az1",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "environment",
+          "Value": "prd"
+        },
+        {
+          "Key": "Author",
+          "Value": "Vendor"
+        },
+        {
+          "Key": "Created-by",
+          "Value": "Terraform"
+        },
+        {
+          "Key": "project-code",
+          "Value": "XXXX"
+        },
+        {
+          "Key": "Name",
+          "Value": "sub-XXXX-app-01"
+        },
+        {
+          "Key": "agency-code",
+          "Value": "xxxx"
+        },
+        {
+          "Key": "zone",
+          "Value": "ia"
+        },
+        {
+          "Key": "Purpose",
+          "Value": "XXXX Intranet App Subnet"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-c6a8b5620638890eb",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-c6a8b5620638890eb",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.1.0/27",
+      "AvailableIpAddressCount": 14,
+      "AvailabilityZone": "ap-southeast-11a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az2",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cidr_request_uuid",
+          "Value": "d141620d32556a86128-08e9af44c5b93fd0b5a"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-management-ap-southeast-11b-additional"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-027dbf71f4465e9bd",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-027dbf71f4465e9bd",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.229.160/27",
+      "AvailableIpAddressCount": 27,
+      "AvailabilityZone": "ap-southeast-11b",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    },
+    {
+      "AvailabilityZoneId": "apse1-az2",
+      "MapCustomerOwnedIpOnLaunch": false,
+      "OwnerId": "222222222222",
+      "AssignIpv6AddressOnCreation": false,
+      "Ipv6CidrBlockAssociationSet": [],
+      "Tags": [
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-PRD-gateway-ap-southeast-1a"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        }
+      ],
+      "SubnetArn": "arn:aws:ec2:ap-southeast-1:222222222222:subnet/subnet-6d5e831e7c6c0a67d",
+      "EnableDns64": false,
+      "Ipv6Native": false,
+      "PrivateDnsNameOptionsOnLaunch": {
+        "HostnameType": "ip-name",
+        "EnableResourceNameDnsARecord": false,
+        "EnableResourceNameDnsAAAARecord": false
+      },
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "SubnetId": "subnet-6d5e831e7c6c0a67d",
+      "State": "available",
+      "VpcId": "vpc-fd4f55b8a35a6bd53",
+      "CidrBlock": "10.30.231.128/28",
+      "AvailableIpAddressCount": 9,
+      "AvailabilityZone": "ap-southeast-1a",
+      "DefaultForAz": false,
+      "MapPublicIpOnLaunch": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "TransitGatewayAttachments": [
+    {
+      "TransitGatewayAttachmentId": "tgw-attach-e378a4b3bc9da734c",
+      "TransitGatewayId": "tgw-80a01b7d36f6fea48",
+      "TransitGatewayOwnerId": "555555555555",
+      "ResourceOwnerId": "222222222222",
+      "ResourceType": "vpc",
+      "ResourceId": "vpc-fd4f55b8a35a6bd53",
+      "State": "available",
+      "Association": {
+        "TransitGatewayRouteTableId": "tgw-rtb-6735507b4922b74cb",
+        "State": "associated"
+      },
+      "CreationTime": "2025-09-19T05:19:57+00:00",
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        }
+      ]
+    },
+    {
+      "TransitGatewayAttachmentId": "tgw-attach-7add652fce86ada77",
+      "TransitGatewayId": "tgw-0226039593ccc7a2b",
+      "TransitGatewayOwnerId": "555555555555",
+      "ResourceOwnerId": "222222222222",
+      "ResourceType": "vpc",
+      "ResourceId": "vpc-fd4f55b8a35a6bd53",
+      "State": "available",
+      "Association": {
+        "TransitGatewayRouteTableId": "tgw-rtb-10774c65e03316803",
+        "State": "associated"
+      },
+      "CreationTime": "2025-09-18T06:50:08+00:00",
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "FlowLogs": [
+    {
+      "CreationTime": "2025-05-28T06:38:16.545000+00:00",
+      "DeliverLogsPermissionArn": "arn:aws:iam::222222222222:role/vpc-flowlog-role-vpc-fd4f55b8a35a6bd53",
+      "DeliverLogsStatus": "SUCCESS",
+      "FlowLogId": "fl-03d16bc145d4f7537",
+      "FlowLogStatus": "ACTIVE",
+      "LogGroupName": "vpc-flowlog-loggroup-vpc-fd4f55b8a35a6bd53",
+      "ResourceId": "vpc-fd4f55b8a35a6bd53",
+      "TrafficType": "ALL",
+      "LogDestinationType": "cloud-watch-logs",
+      "LogDestination": "arn:aws:logs:ap-southeast-1:222222222222:log-group:vpc-flowlog-loggroup-vpc-fd4f55b8a35a6bd53",
+      "LogFormat": "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status} ${vpc-id} ${subnet-id} ${instance-id} ${tcp-flags} ${type} ${pkt-srcaddr} ${pkt-dstaddr} ${flow-direction}",
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "d141620d32556a86128"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-PRD"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "vpc-flowlog-vpc-fd4f55b8a35a6bd53"
+        }
+      ],
+      "MaxAggregationInterval": 600
+    }
+  ]
+}

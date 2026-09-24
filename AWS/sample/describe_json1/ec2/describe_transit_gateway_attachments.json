@@ -1,0 +1,92 @@
+{
+  "TransitGatewayAttachments": [
+    {
+      "TransitGatewayAttachmentId": "tgw-attach-cf6758d210617b9c3",
+      "TransitGatewayId": "tgw-0226039593ccc7a2b",
+      "TransitGatewayOwnerId": "444444444444",
+      "ResourceOwnerId": "111111111111",
+      "ResourceType": "vpc",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "State": "available",
+      "Association": {
+        "TransitGatewayRouteTableId": "tgw-rtb-10774c65e03316803",
+        "State": "associated"
+      },
+      "CreationTime": "2025-09-18T06:50:24+00:00",
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "ce37e6bc53595c9c1d6"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-UAT"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        }
+      ]
+    },
+    {
+      "TransitGatewayAttachmentId": "tgw-attach-38361a66e91a46c99",
+      "TransitGatewayId": "tgw-80a01b7d36f6fea48",
+      "TransitGatewayOwnerId": "444444444444",
+      "ResourceOwnerId": "111111111111",
+      "ResourceType": "vpc",
+      "ResourceId": "vpc-f4efee4924c32459f",
+      "State": "available",
+      "Association": {
+        "TransitGatewayRouteTableId": "tgw-rtb-6735507b4922b74cb",
+        "State": "associated"
+      },
+      "CreationTime": "2025-09-19T05:19:54+00:00",
+      "Tags": [
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "ce37e6bc53595c9c1d6"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        },
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-UAT"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        }
+      ]
+    }
+  ]
+}

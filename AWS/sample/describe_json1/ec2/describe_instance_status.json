@@ -1,0 +1,345 @@
+{
+  "InstanceStatuses": [
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-259663a51d7130462",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-73dc407ad5e3da486",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-5d3cc0cd1958d2281",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-524554418a6635705",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-918bf37a964d19bb7",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-b367b9e20c6693abd",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-5569c2f659cf0f69a",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-118eed52fcfca2268",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-318d451a237756298",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-e3108b47b58f03d5e",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    },
+    {
+      "AvailabilityZone": "ap-southeast-11a",
+      "AvailabilityZoneId": "apse1-az1",
+      "Operator": {
+        "Managed": false,
+        "HiddenByDefault": false
+      },
+      "InstanceId": "i-1e3aaa624e8624a11",
+      "InstanceState": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "InstanceStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      },
+      "SystemStatus": {
+        "Details": [
+          {
+            "Name": "reachability",
+            "Status": "passed"
+          }
+        ],
+        "Status": "ok"
+      }
+    }
+  ]
+}

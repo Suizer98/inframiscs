@@ -1,0 +1,133 @@
+{
+  "Vpcs": [
+    {
+      "OwnerId": "111111111111",
+      "InstanceTenancy": "default",
+      "CidrBlockAssociationSet": [
+        {
+          "AssociationId": "vpc-cidr-assoc-7fca8a87d17e1da9b",
+          "CidrBlock": "10.20.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-cfd0f7b79e6ef1eb9",
+          "CidrBlock": "10.20.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-6a8ae7ce43ff7262d",
+          "CidrBlock": "10.20.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-1f439f0d1fc2c6cac",
+          "CidrBlock": "10.20.0.0/16",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        }
+      ],
+      "IsDefault": false,
+      "Tags": [
+        {
+          "Key": "cmp_name",
+          "Value": "XXXX-UAT"
+        },
+        {
+          "Key": "ec2:ResourceTag/org:security:zone",
+          "Value": "intranet"
+        },
+        {
+          "Key": "org:team",
+          "Value": "team"
+        },
+        {
+          "Key": "cmp_cidr",
+          "Value": "/25"
+        },
+        {
+          "Key": "cmp_compartment_type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "request_uuid",
+          "Value": "ce37e6bc53595c9c1d6"
+        },
+        {
+          "Key": "type",
+          "Value": "Intranet"
+        },
+        {
+          "Key": "Name",
+          "Value": "XXXX-UAT"
+        },
+        {
+          "Key": "org:origin",
+          "Value": "cloud"
+        }
+      ],
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "VpcId": "vpc-f4efee4924c32459f",
+      "State": "available",
+      "CidrBlock": "10.20.0.0/16",
+      "DhcpOptionsId": "default"
+    },
+    {
+      "OwnerId": "333333333333",
+      "InstanceTenancy": "default",
+      "CidrBlockAssociationSet": [
+        {
+          "AssociationId": "vpc-cidr-assoc-8a0675080f297e44d",
+          "CidrBlock": "10.20.224.192/26",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-a665aba472d12e209",
+          "CidrBlock": "10.20.225.192/26",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-5680c9269e7860cc4",
+          "CidrBlock": "10.20.221.0/25",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-02256b1992557c08d",
+          "CidrBlock": "10.20.228.64/26",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        },
+        {
+          "AssociationId": "vpc-cidr-assoc-0a79452b71e741789",
+          "CidrBlock": "10.20.221.128/25",
+          "CidrBlockState": {
+            "State": "associated"
+          }
+        }
+      ],
+      "IsDefault": false,
+      "BlockPublicAccessStates": {
+        "InternetGatewayBlockMode": "off"
+      },
+      "VpcId": "vpc-b547d92234d892038",
+      "State": "available",
+      "CidrBlock": "10.20.224.192/26",
+      "DhcpOptionsId": "default"
+    }
+  ]
+}
