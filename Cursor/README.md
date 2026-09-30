@@ -2,7 +2,7 @@
 
 1. Avoid using Bold font when editing readme.md
 2. Be minimal when writing comments in codebase
-3. For python scripts, try to put all import modules lines in the beginning of file
+3. For python scripts, try to put all import modules lines in the beginning of file, followed by constants. If doing a backend api work, all non secrets constants should be placed in one file called constants.py
 4. Never perform git push directly unless asked to do so
 5. Never put _/underscore in front of function and variable names
 
