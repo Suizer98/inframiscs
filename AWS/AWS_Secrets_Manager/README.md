@@ -76,9 +76,14 @@ aws configure sso
 
 The wizard lists accounts and permission sets. Pick the DEV account and the permission set that can read Secrets Manager. The profile name stays on this machine.
 
+```text
+aws configure list-profiles
+```
+
+Use one of those names as `--profile` and as `profile_name` in the session above.
+
 ```powershell
 aws sso login --profile dev
-$env:AWS_PROFILE = "dev"
 aws sts get-caller-identity
 aws secretsmanager list-secrets --region ap-southeast-1 --filters Key=tag-key,Values=Environment Key=tag-value,Values=DEV
 ```
