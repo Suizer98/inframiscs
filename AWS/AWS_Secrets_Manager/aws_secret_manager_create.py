@@ -6,6 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 region_name = "ap-southeast-1"
+kms_key_id = "alias/<name>"
 
 client = boto3.client(
     "secretsmanager",
@@ -71,7 +72,7 @@ def wait_until_tagged_secrets_gone(*, timeout: float = 120, interval: float = 1)
 
 
 def upload_secret(name: str, secret_value, *, is_binary: bool = False) -> None:
-    create_kwargs = {"Name": name, "Tags": secret_tags}
+    create_kwargs = {"Name": name, "Tags": secret_tags, "KmsKeyId": kms_key_id}
     update_kwargs = {"SecretId": name}
     if is_binary:
         create_kwargs["SecretBinary"] = secret_value
@@ -88,6 +89,7 @@ def upload_secret(name: str, secret_value, *, is_binary: bool = False) -> None:
         except client.exceptions.ResourceExistsException:
             client.put_secret_value(**update_kwargs)
             client.tag_resource(SecretId=name, Tags=secret_tags)
+            client.update_secret(SecretId=name, KmsKeyId=kms_key_id)
             print(f"Updated: {name}")
             return
         except ClientError as e:
