@@ -1,0 +1,101 @@
+trigger:
+  - main
+
+pr:
+  - main
+
+pool: mock-pool
+
+variables:
+  projectName: mock-api
+
+stages:
+  - stage: Test
+    displayName: AWS Secrets Manager Test
+    jobs:
+      - job: test
+        displayName: Run AWS emulator secrets test
+        steps:
+          - checkout: self
+
+          - task: NuGetAuthenticate@1
+            displayName: Authenticate private NuGet feed
+            continueOnError: true
+            inputs:
+              nuGetServiceConnections: Mock.Artifacts
+
+          - task: PowerShell@2
+            displayName: Write NuGet token for image build
+            continueOnError: true
+            inputs:
+              targetType: inline
+              script: |
+                $endpoints = $env:VSS_NUGET_EXTERNAL_FEED_ENDPOINTS | ConvertFrom-Json
+                $entry = @($endpoints.endpointCredentials) | Where-Object { $_.endpoint -like '*/_packaging/Mock.Artifacts/*' } | Select-Object -First 1
+                if (-not $entry) { throw 'Mock.Artifacts endpoint credentials not found' }
+                $username = $entry.username
+                if ([string]::IsNullOrWhiteSpace($username)) { $username = 'VssSessionToken' }
+                $payload = @{ username = $username; password = $entry.password } | ConvertTo-Json -Compress
+                $tokenFile = Join-Path '$(Agent.TempDirectory)' 'nuget_token'
+                [System.IO.File]::WriteAllText($tokenFile, $payload)
+                Write-Host "##vso[task.setvariable variable=NUGET_TOKEN_FILE]$tokenFile"
+                Write-Host "Using NuGet endpoint: $($entry.endpoint)"
+
+          - task: DockerCompose@0
+            displayName: Build images
+            continueOnError: true
+            env:
+              NUGET_TOKEN_FILE: $(NUGET_TOKEN_FILE)
+              DOCKER_BUILDKIT: 1
+              COMPOSE_DOCKER_CLI_BUILD: 1
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/aws_emulator/docker-compose.yml
+              dockerComposeCommand: build aws-emulator aws-secrets-manager-populate aws-secrets-manager-test
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Run populating secrets on AWS Emulator
+            continueOnError: true
+            env:
+              NUGET_TOKEN_FILE: $(NUGET_TOKEN_FILE)
+              DOCKER_BUILDKIT: 1
+              COMPOSE_DOCKER_CLI_BUILD: 1
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/aws_emulator/docker-compose.yml
+              dockerComposeCommand: run --rm aws-secrets-manager-populate
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Spin up API to read secrets from AWS Emulator
+            continueOnError: true
+            env:
+              NUGET_TOKEN_FILE: $(NUGET_TOKEN_FILE)
+              DOCKER_BUILDKIT: 1
+              COMPOSE_DOCKER_CLI_BUILD: 1
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/aws_emulator/docker-compose.yml
+              dockerComposeCommand: up --no-deps --abort-on-container-exit --exit-code-from aws-secrets-manager-test aws-secrets-manager-test
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+
+          - task: DockerCompose@0
+            displayName: Remove containers
+            inputs:
+              action: Run a Docker Compose command
+              dockerComposeFile: $(Build.SourcesDirectory)/aws_emulator/docker-compose.yml
+              dockerComposeCommand: down -v --remove-orphans
+              projectName: $(projectName)
+              dockerComposePath: docker-compose
+            condition: always()
+
+          - task: PowerShell@2
+            displayName: Remove NuGet token file
+            inputs:
+              targetType: inline
+              script: Remove-Item -LiteralPath '$(Agent.TempDirectory)\nuget_token' -Force -ErrorAction SilentlyContinue
+            condition: always()

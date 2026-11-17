@@ -1,7 +1,7 @@
 # Mock fixture only. Values such as mock-db and MOCKAPP are fake.
 # The AWS Emulator image can connect to the internet.
 x-emulator-client: &emulator-client
-  image: mock-secrets-light
+  image: mock-api-secrets
   network_mode: service:aws-emulator
   depends_on:
     aws-emulator:
@@ -66,17 +66,32 @@ services:
 
   aws-secrets-manager-populate:
     <<: *emulator-client
+    image: mock-secrets-light
     build:
       context: .
-      dockerfile: test/Dockerfile
+      dockerfile: test/Dockerfile.test
     entrypoint: ["/populate-secrets.sh"]
 
   aws-secrets-manager-light-test:
     <<: *emulator-client
+    image: mock-secrets-light
+    build:
+      context: .
+      dockerfile: test/Dockerfile.test
+    entrypoint: ["/run-light.sh"]
+
+  aws-secrets-manager-test:
+    <<: *emulator-client
     build:
       context: .
       dockerfile: test/Dockerfile
-    entrypoint: ["/run-light.sh"]
+      secrets:
+        - nuget_token
+    entrypoint: ["/src/test/run-test.sh"]
+
+secrets:
+  nuget_token:
+    file: ${NUGET_TOKEN_FILE:-./test/nuget-token.empty}
 
 networks:
   aws-emulator:
