@@ -1,0 +1,20 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends python3 python3-venv python3-pip \
+    && rm -rf /var/lib/apt/lists/* \
+    && python3 -m venv /opt/emulator-python \
+    && /opt/emulator-python/bin/pip install --no-cache-dir boto3
+ENV PATH="/opt/emulator-python/bin:${PATH}"
+WORKDIR /src
+COPY Aws.SecretsManager.csproj ./
+COPY *.cs ./
+COPY test/Aws.SecretsManager.EmulatorTest.csproj test/
+RUN dotnet restore test/Aws.SecretsManager.EmulatorTest.csproj
+COPY test/Program.cs test/
+COPY test/PrepareKms.py test/populate.py test/
+COPY test/run-light.sh /run-light.sh
+COPY test/populate-secrets.sh /populate-secrets.sh
+RUN sed -i 's/\r$//' /run-light.sh /populate-secrets.sh test/PrepareKms.py test/populate.py \
+    && chmod +x /run-light.sh /populate-secrets.sh
+WORKDIR /src/test
+ENTRYPOINT ["/run-light.sh"]

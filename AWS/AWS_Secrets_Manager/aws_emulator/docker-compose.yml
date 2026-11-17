@@ -1,0 +1,86 @@
+# Mock fixture only. Values such as mock-db and MOCKAPP are fake.
+# The AWS Emulator image can connect to the internet.
+x-emulator-client: &emulator-client
+  image: mock-secrets-light
+  network_mode: service:aws-emulator
+  depends_on:
+    aws-emulator:
+      condition: service_healthy
+  environment:
+    AWS_ENDPOINT_URL: https://127.0.0.1:9297
+    AWS_CA_BUNDLE: /emulator/ca.pem
+    AWS_SHARED_CREDENTIALS_FILE: /emulator/emulator_credentials
+    AWS_CONFIG_FILE: /emulator/config
+    AWS_EC2_METADATA_DISABLED: "true"
+    AWS_REGION: ap-southeast-1
+    AWS_DEFAULT_REGION: ap-southeast-1
+    AWS_PAGER: ""
+    SSL_CERT_FILE: /emulator/ca.pem
+  volumes:
+    - emulator-state:/emulator:ro
+    - ./test/appsettings.json:/work/appsettings.json:ro
+
+services:
+  emulator-init:
+    image: public.ecr.aws/amazonlinux/amazonlinux:2023-minimal
+    init: true
+    user: "0"
+    volumes:
+      - emulator-state:/state
+    command: ["sh", "-c", "chown -R 1000:1000 /state; trap 'exit 0' TERM; sleep infinity & wait"]
+    healthcheck:
+      test: ["CMD", "sh", "-c", "test \"$(stat -c %u /state)\" = 1000"]
+      interval: 1s
+      timeout: 3s
+      retries: 20
+      start_period: 1s
+
+  aws-emulator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aws-emulator
+    depends_on:
+      emulator-init:
+        condition: service_healthy
+    networks:
+      - aws-emulator
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    ports:
+      - "127.0.0.1:9297:9297"
+    environment:
+      EMULATOR_TELEMETRY: "off"
+    volumes:
+      - emulator-state:/home/emulator/.aws/emulator/9297
+    command: ["--idle-timeout", "900"]
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "--cacert", "/home/emulator/.aws/emulator/9297/ca.pem", "https://127.0.0.1:9297/__admin/health"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+      start_period: 5s
+
+  aws-secrets-manager-populate:
+    <<: *emulator-client
+    build:
+      context: .
+      dockerfile: test/Dockerfile
+    entrypoint: ["/populate-secrets.sh"]
+
+  aws-secrets-manager-light-test:
+    <<: *emulator-client
+    build:
+      context: .
+      dockerfile: test/Dockerfile
+    entrypoint: ["/run-light.sh"]
+
+networks:
+  aws-emulator:
+    name: mock-aws-secrets-emulator
+
+volumes:
+  emulator-state:
