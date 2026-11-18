@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 region_name = "ap-southeast-1"
-kms_key_id = "alias/<name>"
+kms_key_id = "arn:aws:kms:ap-southeast-1:111111111111:key/45b07d33bbedf6f672c4819e9f679963"
 
 client = boto3.client(
     "secretsmanager",
